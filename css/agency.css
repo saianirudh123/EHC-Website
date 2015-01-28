@@ -56,6 +56,16 @@ h6 {
     font-weight: 700;
 }
 
+.circle-image
+{
+    margin :6.6%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    float: left;
+
+}
+
 .img-centered {
     margin: 0 auto;
 }

@@ -1,0 +1,80 @@
+form#two { background:#dee; width:870px; padding:10px; border:1px solid #000; margin:0 auto;}
+form#two fieldset { text-align: left;width:850px; display:block; border:1px solid #fff; padding:5px; font-family:verdana, sans-serif; margin-bottom:0.5em; line-height:1.5em;}
+* html form#two fieldset#personal, * html form#two fieldset#academic {background-position:400px 20px;}
+* html form#two fieldset#declaration {background-position:400px 20px;}
+* html form#two fieldset#project {background-position:400px 20px;}
+form#two legend {font-family:georgia, sans-serif; font-size:0.8em; font-weight:bold; border:2px solid #fff; margin-bottom:0.5em; padding-top:0.5em; padding-bottom:0.5em; padding-left:0.5em; padding-right:0.5em; width:auto; background:lightgray;}
+form#two label {font-size:0.8em;clear:left; display:block; float:left; width:170px; text-align:right; padding-right:0.9em; color:#888; margin-bottom:0.5em;padding-top:0.1em;}
+form#two input {border:1px solid #fff; background:#fff  repeat-x top left; padding-left:0.5em; margin-bottom:0.5em;margin-top: 0.5em;}
+form#two select {margin-left:0.0em;margin-bottom:0.5em;margin-top: 0.5em;}
+form#two textarea {width:20em; height:5em; border:1px solid #fff; padding:0.5em; overflow:auto; background:#fff repeat-x bottom left;}
+form#two option {background:#788; color:#fff;}
+form#two optgroup {background:#abb; color:#000; font-family:georgia, serif;}
+form#two optgroup option {background:#9aa; color:#fff;}
+form#two #button1, form#two #button2 {color:#c00; padding-right:0.5em; cursor:pointer; width:205px; margin-left:0.5em;}
+form#two #button1:hover, form#two #button2:hover {background-position:center left; color:#000;}
+form#two table {font-size: 12px; border-collapse: collapse; width:850px; border: 1px;border-color: #fff;text-align: center;  }
+form#two table td {vertical-align: inherit;}
+form#two div{text-align: left; font-size: 11px;}
+form#two span{right: 0;text-align: left;padding-right:0.5em;font-size: 11px;font-weight: normal;font-family: Verdana, Arial, Helvetica, sans-serif;}
+form#two p{display: inline;color: #C00;font-size: 11px;font-weight: normal;font-family: Verdana, Arial, Helvetica, sans-serif;vertical-align: text-top;}
+form#two .date{text-align: center;font-size: 11px; }
+form#two .lebaeltext{display: inline;color: #000;font-size: 11px;font-weight: bold;font-family: Verdana, Arial, Helvetica, sans-serif;vertical-align: text-top;}
+form#two .fieldsetsample { text-align: left;width:850px; display:block; border:0px solid #fff; padding:4px; font-family:verdana, sans-serif; margin-bottom:0.5em; line-height:0.8em;}
+form#two .captchatable {font-size: 12px;  width:450px; text-align: center;border: 1;}
+form#two .captchatr {vertical-align: inherit;border: 1;}
+form#two ul {margin-top: 0px;margin-bottom: 0px;}
+table.sortable th{
+    font-weight: bold;
+    cursor:default;
+    background-color: gainsboro;
+}
+
+table.sortable td{
+    background-color: silver;
+
+}
+
+.area#two { background:#dee; width:870px; padding:10px; border:1px solid #000; margin:0 auto;}
+.area#two fieldset { text-align: left;width:850px; display:block; border:1px solid #fff; padding:5px; font-family:verdana, sans-serif; margin-bottom:0.5em; line-height:1.5em;}
+.area#two table {font-size: 12px;width:850px; border: 1px solid #ffffff;border-color: #fff;text-align: center;  }
+.area#two table td {vertical-align: inherit;border: 1px solid #ffffff;border-color: #fff;}
+.area#two table th {vertical-align: inherit;border: 1px solid #ffffff;border-color: #fff;}
+* html .area#two fieldset#personal, * html form#two fieldset#academic {background-position:400px 20px;}
+* html .area#two fieldset#declaration {background-position:400px 20px;}
+* html .area#two fieldset#project {background-position:400px 20px;}
+.required {
+    font-size:12px;
+    color:#666666;
+    position: relative;
+    width:200px;
+    float:right;
+    word-spacing: normal;
+    letter-spacing: normal;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family:Verdana, Tahoma, Arial, sans-serif;
+    font-style: normal;
+    text-align: left;
+    display:none;
+}
+
+.optional {
+    font-size:12px;
+    color:#666666;
+    position: relative;
+    width:200px;
+    float:right;
+    word-spacing: normal;
+    letter-spacing: normal;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family:Verdana, Tahoma, Arial, sans-serif;
+    font-style: normal;
+    text-align: left;
+    display:none;
+}

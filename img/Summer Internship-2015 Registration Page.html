@@ -1,0 +1,2240 @@
+
+<!-- saved from url=(0067)http://ekalavya.it.iitb.ac.in/summerinternship2015/registration.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+
+    function setBranch(val)
+    {
+
+        if(val == "other")
+        {
+            document.summer.otherbranch.disabled=false;
+        }
+        else
+        {
+            document.summer.otherbranch.disabled=true;
+
+            document.summer.otherbranch.value="Enter Branch Name";
+
+        }
+    }
+    function setDegree(val)
+    {
+
+        if(val == "other")
+        {
+            document.summer.otherdegree.disabled=false;
+        }
+        else{
+            document.summer.otherdegree.disabled=true;
+            document.summer.otherdegree.value="Enter Degree Name";
+        }
+
+    }
+</script>
+
+
+
+    
+        <title>Summer Internship-2015 Registration Page</title>
+        <link rel="stylesheet" href="./Summer Internship-2015 Registration Page_files/design.css" type="text/css">
+        <script src="./Summer Internship-2015 Registration Page_files/Validate.js" type="text/javascript"> </script>
+        <script language="JavaScript" src="./Summer Internship-2015 Registration Page_files/calendar_us.js"></script>
+        <script language="JavaScript" src="./Summer Internship-2015 Registration Page_files/jquery-1.6.2.min.js"></script>
+        <script language="JavaScript" src="./Summer Internship-2015 Registration Page_files/jquery.tipTip.minified.js"></script>
+        <link rel="stylesheet" href="http://ekalavya.it.iitb.ac.in/summerinternship2015/css/calendar.css">
+        <link rel="stylesheet" href="http://ekalavya.it.iitb.ac.in/summerinternship2015/css/tipTip.css">
+        <script type="text/javascript">
+            $(function(){
+                $(".tipTip").tipTip({defaultPosition: "right"});
+            });
+        </script>
+    <script type="text/javascript" src="./Summer Internship-2015 Registration Page_files/saved_resource"></script></head>
+    
+
+
+
+    <body bgcolor="#6D7B8D" onload="toggleField();" gram_dict="true">
+        
+        <div align="center">
+            <h2>Summer Internship 2015</h2>
+            <h3>Under the guidance of Professor D. B. Phatak, Computer Science Department, IIT Bombay</h3>
+
+            <form id="two" name="summer" action="http://ekalavya.it.iitb.ac.in/summerinternship2015/insertdatabase.jsp" method="post" onsubmit="return validateCourseregform(this);">
+                
+                <div style="color:red;font-size: 13px;font-weight: bold;text-align: center;">Last date of Registration for Summer Internship - 2015 is 8th February 2015.</div>
+                <div style="font-size: 13px;color: #2125fe;margin-bottom: 10px;border:1px solid #fcfcfc; padding:0px 20px 10px 20px;">
+                    <span style="font-size: 12px;font-weight: bold;color:red;display:block;text-align: center;margin-top: 10px;"> Register, only if you have 8 weeks vacation in May and June</span>
+                </div>
+                
+
+                
+                <fieldset>
+                    <div><em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> Required fields </div>
+                </fieldset>
+
+                <fieldset id="personal">
+                    <legend>Personal Information</legend>
+                    <label for="firstname">First name : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="firstname" id="firstname" type="text" tabindex="1" maxlength="15" value="" class="tipTip">
+                    <p id="Efirstname" style="display: none">should be at least 3 character (at most 15 character) with period(.), can't use white space and consecutive periods &amp; should start with character </p>
+                    
+                    
+                    
+                    <br>
+
+                    <label for="lastname">Last name : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="lastname" id="lastname" type="text" tabindex="2" maxlength="15" value="" class="tipTip">
+                    <p id="Elastname" style="display: none">should be at least 3 character (at most 15 character) with period(.), can't use white space and consecutive periods &amp; should start with character </p>
+                    
+                    
+                    <br>
+
+                    <label for="address">Address : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <textarea name="address" id="address" tabindex="3" class="tipTip" ,="" .="" -"=""></textarea>
+                    <p id="Eaddress" style="display: none"> should be at least 10 character long (at most 150) with alphabets, digits and (): _  - " , . -</p>
+                    
+                    
+                    <br>
+
+                    <label for="city">City : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="cityname" id="othercity" type="text" maxlength="15" tabindex="4" value="" class="tipTip">
+                    <p id="Ecity" style="display: none">should be at least 1 character (at most 15 character)</p>
+                    
+                    
+                    <br>
+
+                    <label for="state">State : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <select name="statename" tabindex="5">
+                        <option class="epara" value="0" selected="true"> - Select State -</option>
+                        
+                        <option value="ANDAMAN AND NICOBAR ISLANDS">ANDAMAN AND NICOBAR ISLANDS</option>
+                        
+                        <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                        
+                        <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                        
+                        <option value="ASSAM">ASSAM</option>
+                        
+                        <option value="BIHAR">BIHAR</option>
+                        
+                        <option value="CHANDIGARH">CHANDIGARH</option>
+                        
+                        <option value="CHHATISGARH">CHHATISGARH</option>
+                        
+                        <option value="DADRA NAGAR HAVELI">DADRA NAGAR HAVELI</option>
+                        
+                        <option value="DAMAN DIU">DAMAN DIU</option>
+                        
+                        <option value="DELHI">DELHI</option>
+                        
+                        <option value="GOA">GOA</option>
+                        
+                        <option value="GUJARAT">GUJARAT</option>
+                        
+                        <option value="HARYANA">HARYANA</option>
+                        
+                        <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                        
+                        <option value="JAMMU &amp; KASHMIR">JAMMU &amp; KASHMIR</option>
+                        
+                        <option value="JHARKHAND">JHARKHAND</option>
+                        
+                        <option value="KARNATAKA">KARNATAKA</option>
+                        
+                        <option value="KERALA">KERALA</option>
+                        
+                        <option value="LAKSHADWEEP">LAKSHADWEEP</option>
+                        
+                        <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                        
+                        <option value="MAHARASHTRA">MAHARASHTRA</option>
+                        
+                        <option value="MANIPUR">MANIPUR</option>
+                        
+                        <option value="MEGHALAYA">MEGHALAYA</option>
+                        
+                        <option value="MIZORAM">MIZORAM</option>
+                        
+                        <option value="NAGALAND">NAGALAND</option>
+                        
+                        <option value="ORISSA">ORISSA</option>
+                        
+                        <option value="PONDICHERRY">PONDICHERRY</option>
+                        
+                        <option value="PUNJAB">PUNJAB</option>
+                        
+                        <option value="RAJASTHAN">RAJASTHAN</option>
+                        
+                        <option value="SIKKIM">SIKKIM</option>
+                        
+                        <option value="TAMIL NADU">TAMIL NADU</option>
+                        
+                        <option value="TRIPURA">TRIPURA</option>
+                        
+                        <option value="UTTARANCHAL">UTTARANCHAL</option>
+                        
+                        <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                        
+                        <option value="WEST BENGAL">WEST BENGAL</option>
+                        
+                    </select>
+
+                    <p id="Estatename" style="display: none">Please select state</p>
+                    
+                    <br>
+
+                    <label for="pincode">Pincode : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="pincode" id="pincode" type="text" tabindex="5" maxlength="6" value="" class="tipTip">
+                    <p id="Epincode" style="display: none">should be 6 digits</p>
+                    
+                    <br>
+
+                    <label for="email">Email : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="email" id="email" type="text" tabindex="7" maxlength="50" value="" class="tipTip">
+                    <p id="Eemail" style="display: none">should be valid email address</p>
+                    
+                    
+                    <br>
+
+
+                    <label for="mobile">Mobile : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="mobile" id="mobile" type="text" tabindex="8" maxlength="11" value="" class="tipTip">
+                    <p id="Emobile" style="display: none">should be 10 digits (beginning 9/8/7) long (at most 11 if beginning 0)</p>
+                    
+                    
+                    <br>
+
+
+                    <label for="landline">Land Line : </label>
+                    <input name="landline" id="landline" type="text" tabindex="9" maxlength="15" value="" class="tipTip">
+                    <p id="Ehomephone" style="display: none">should be at least 10 digits long (at most 15) beginning with 0</p>
+                   
+                    
+                    <br>
+
+
+                    <label for="marital">Marital Status : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em></label>
+                    <input type="radio" name="martial" id="martial" value="single" tabindex="10" checked=""><div class="lebaeltext">Single</div> <input type="radio" name="martial" id="martial" value="married" tabindex="12"><div class="lebaeltext">Married</div>
+
+                    <br>
+
+
+                    <label for="landline">Gender : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input type="radio" name="gender" id="gender" value="male" tabindex="11" checked=""><div class="lebaeltext">Male</div> <input type="radio" name="gender" id="gender" value="female" tabindex="12"><div class="lebaeltext">Female</div>
+                    <br>
+
+
+                    <label for="dob">Date of Birth : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="dob" id="dob" type="text" tabindex="13" value="" readonly="true" class="tipTip">
+                    <div id="calstr" style="position:absolute; z-index:1000"></div>
+                    
+                    &nbsp;&nbsp;
+                    <script language="JavaScript">
+                        new tcal ({// form name
+                            'formname': 'summer',
+                            // input name
+                            'controlname': 'dob'
+                        });
+
+                    </script><img src="./Summer Internship-2015 Registration Page_files/cal.gif" id="tcalico_0" onclick="A_TCALS[&#39;0&#39;].f_toggle()" class="tcalIcon" alt="Open Calendar" title="Open Calendar">
+                    <p id="Edob" style="display: none">Please select Date of birth</p>
+                    
+                    <br>
+
+
+                    <div class="fieldsetsample"></div>
+                    <div align="left">Any additional information you wish to provide about yourself? </div>
+                    <textarea name="additional" tabindex="14" class="tipTip" -"=""></textarea>
+                    <p id="Eadditional" style="display: none"> should be at least 5 character long (at most 150) with alphabets, digits and ()  , . : ; " -</p>
+                    
+
+                    <div align="left">What do you hope to achieve by doing internship at IIT Bombay? </div>
+                    <textarea name="achieve" tabindex="15" class="tipTip" -"=""></textarea>
+                    <p id="Eachive" style="display: none"> should be at least 5 character long (at most 150) with alphabets, digits and () , . : ; " -</p>
+
+                    
+
+                </fieldset>
+
+
+                <fieldset id="academic">
+                    <legend>Academic Proficiency</legend>
+                    <br>
+                    <table border="1">
+                        <tbody><tr>
+                            <th>Exam</th>
+                            <th>Board / School <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em></th>
+                            <th>Year of Passing <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em></th>
+                            <th>% of Total Marks <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </th>
+                            <th>Any other Information </th>
+                        </tr>
+                        <tr>
+                            <td>X </td>
+                            <td> <select name="xthboard" id="xthboard" tabindex="16">
+
+                                    <option value="CBSE">CBSE</option>
+                                    <option value="ICSE">ICSE </option>
+                                    <option value="staeboard">State Board </option>
+                                    <option value="other">other </option>
+                                </select>
+
+                            </td>
+                            <td align="left"> <select name="xthyear" id="xthyear" tabindex="17">
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+
+                                </select></td>
+                            <td align="left"> <input name="xthmark" id="xthmark" type="text" tabindex="18" maxlength="5" size="4" value="">
+                                <p id="Exthmark" style="display: none"><font size="5"><sub>*</sub></font></p>
+                                    
+                            </td>
+                            <td> <input name="xthinformation" id="xthinformation" type="text" tabindex="19" maxlength="20"></td>
+                        </tr>
+                        <tr>
+                            <td>XII </td>
+                            <td> <select name="xiithboard" id="xiithboard" tabindex="20">
+
+                                    <option value="CBSE">CBSE</option>
+                                    <option value="ICSE">ICSE </option>
+                                    <option value="staeboard">State Board </option>
+                                    <option value="other">other </option>
+                                </select></td>
+                            <td align="left"> <select name="xiithyear" id="xiithyear" tabindex="21">
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                </select>
+
+
+                            </td>
+                            <td align="left"> <input name="xiithmark" id="xiithmark" type="text" tabindex="22" maxlength="5" size="4" value="">
+                                <p id="Exiithmark" style="display: none"><font size="5"><sub>*</sub></font></p>
+                                    
+                            </td>
+                            <td> <input name="xiithinformation" id="xiithinformation" type="text" tabindex="23" maxlength="20"></td>
+                        </tr>
+                    </tbody></table>
+
+                    <div>Degree and Branch for which you are currently studying - </div>
+                    <br>
+                    <label for="degree">Degree : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input type="radio" name="degree" id="degree" value="BE" checked="" onchange="setDegree(this.value)"><div class="lebaeltext">BE</div>
+                    <input type="radio" name="degree" id="degree" value="B.Tech" onchange="setDegree(this.value)"><div class="lebaeltext">B.Tech</div>
+                    <!--<input type="radio" name="degree" id="degree" value="other" onchange="setDegree(this.value)"><div class="lebaeltext">Other</div>&nbsp;&nbsp;&nbsp;-->
+                    <input maxlength="30" type="hidden" name="otherdegree" id="otherdegree" disabled="" value="Enter Degree Name">
+
+
+                    <p id="Eotherdegree" style="display: none">should be at least 1 character (at most 30 character) with Characters .-</p>
+                    <br>
+                    <label for="branch">Branch : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <select name="branch" id="branch" tabindex="24" onchange="setBranch(this.value)">
+                        <option value="0"> - Select Branch -</option>
+                        <option value="CSE">Computer science</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="EE">Electrical/Electronics</option>
+
+                    </select>
+                    <input maxlength="30" type="hidden" name="otherbranch" id="otherbranch" disabled="" value="Enter Branch Name">
+
+                    <p id="Ebranch" style="display: none">Please Select Branch  </p>
+                    
+                    <p id="Eotherbranch" style="display: none">should be at least 1 character (at most 30 character) with Characters .- </p>
+
+                    <br><div><ul><strong>Note : -If you have yet not received marks for a semester, fill 0.0 in the box provided.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-If the college/university evaluates your performance in any other manner, e.g. grades, or performance index out of 4 or 6, then write the details in plain text, in the Box marked 'Marks in Special Format'.</strong></ul>
+                    </div>
+                    <table border="1">
+                        <tbody><tr>
+                            <th>Year</th>
+                            <th>Year of Passing <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em></th>
+                            <th>sem I  % / SPI(out of 10) <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </th>
+                            <th>sem II % / SPI(out of 10)<em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </th>
+                        </tr>
+                        <tr>
+                            <td>First Year </td>
+                            <td align="left"> <select name="firstyear" id="firstyear" type="text" tabindex="25">
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+
+
+                                </select></td>
+                            <td align="left"> <input name="firstyearpercentage" id="firstyearpercentage" type="text" tabindex="26" maxlength="5" size="4" value="">
+                                <p id="Efirstyearpercentage" style="display: none"><font size="5"><sub>*</sub></font> </p>
+                                    
+                            </td>
+                            <td align="left"> <input name="firstyearinformation" id="firstyearinformation" type="text" tabindex="27" maxlength="5" size="4" value="">
+                                <p id="Efirstyearinformation" style="display: none"><font size="5"><sub>*</sub></font> </p>
+                                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Second Year </td>
+                            <td align="left"> <select name="secondyear" id="secondyear" tabindex="28">
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+
+                                </select></td>
+                            <td align="left"> <input name="secondyearpercentage" id="secondyearpercentage" type="text" tabindex="29" maxlength="5" size="4" value="">
+                                <p id="Esecondyearpercentage" style="display: none"><font size="5"><sub>*</sub></font> </p>
+                                    
+                            </td>
+                            <td align="left"> <input name="secondyearinformation" id="secondyearinformation" type="text" tabindex="30" maxlength="5" size="4" value="">
+                                <p id="Esecondyearinformation" style="display: none"><font size="5"><sub>*</sub></font> </p>
+                                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Third Year </td>
+                            <td align="left"> <select name="thirdyear" id="thirdyear" tabindex="31">
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+
+                                </select></td>
+                            <td align="left"> <input name="thirdyearpercentage" id="thirdyearpercentage" type="text" tabindex="32" maxlength="5" size="4" value="">
+                                <p id="Ethirdyearpercentage" style="display: none"><font size="5"><sub>*</sub></font> </p>
+                                    </td>
+                            <td align="left"> <input name="thirdyearinformation" id="thirdyearinformation" type="text" tabindex="33" maxlength="5" size="4" value="">
+                                <p id="Ethirdyearinformation" style="display: none"><font size="5"><sub>*</sub></font> </p>
+                                    
+                            </td>
+                        </tr>
+
+                    </tbody></table>
+
+                    <div> Marks in Special Format - </div>
+                    <textarea name="degreedes" id="degreedes" tabindex="34"></textarea>
+
+                    <p id="Edegreedes" style="display: none">should be at least 20 character long (at most 1000) with alphabets, digits and (),.-</p>
+                    
+                    <br>
+
+                    <div><em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> Your <b>Current approximate rank</b>(relative position) in the class <input size="5" type="text" name="classrank" tabindex="34" maxlength="5" value="" class="tipTip">
+                        <p id="Eclassrank" style="display: none">should be number </p>
+                       
+                         amongst number of students in your class <input size="5" type="text" name="numberofstudent" tabindex="34" maxlength="5" value="" class="tipTip">
+                        <p id="Enumberofclass" style="display: none">should be number </p>
+                        
+                        
+                    </div>
+                    <br>
+
+                    <div> What is the size of the longest program  you have written so far?(In terms of Lines of code)  </div>
+                    <input type="radio" tabindex="35" name="programeline" value="Less than 100" checked=""><div class="lebaeltext">Less than 100</div>
+                    <input type="radio" tabindex="36" name="programeline" value="100-500"><div class="lebaeltext">100-500</div>
+                    <input type="radio" tabindex="37" name="programeline" value="500- 1000"><div class="lebaeltext">500- 1000</div>
+                    <input type="radio" tabindex="38" name="programeline" value="Greater than 1000"><div class="lebaeltext">Greater than 1000</div>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Software/Hardware Proficiency</legend>
+                    <div>List major courses completed so far : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em></div>
+                    <label>(i)</label> <input name="majorcourse1" type="text" tabindex="39" maxlength="30" value="" class="tipTip">
+                    <p id="Emajorcourse1" style="display: none">should be at least 1 character long (at most 30) with alphabets and .</p>
+                    
+                    <br>
+                    <label>(ii)</label> <input name="majorcourse2" type="text" tabindex="40" maxlength="30" value="" class="tipTip">
+                    <p id="Emajorcourse2" style="display: none">should be at least 1 character long (at most 30) with alphabets and .</p>
+                  
+                    <br>
+                    <label>(iii)</label> <input name="majorcourse3" type="text" tabindex="41" maxlength="30" value="" class="tipTip">
+                    <p id="Emajorcourse3" style="display: none">should be at least 1 character long (at most 30) with alphabets and .</p>
+                    
+                    <br>
+                    <label>(iv)</label> <input name="majorcourse4" type="text" tabindex="42" maxlength="30" value="" class="tipTip">
+                    <p id="Emajorcourse4" style="display: none">should be at least 1 character long (at most 30) with alphabets and .</p>
+                   
+                    <br>
+
+
+                    <div class="fieldsetsample"></div>
+                    <div align="left">Your proficiency in algorithm development and programming :</div>
+                    <label for="assemply">(i) Assembly Language </label>
+                    <input type="text" tabindex="48" name="assemply" maxlength="30" value="" class="tipTip">
+                    <input type="radio" tabindex="49" name="assemplyoption" value="1" checked=""><div class="lebaeltext">Poor</div>
+                    <input type="radio" tabindex="50" name="assemplyoption" value="2"><div class="lebaeltext">Good</div>
+                    <input type="radio" tabindex="51" name="assemplyoption" value="3"><div class="lebaeltext">Excellent</div>
+                    <p id="Eassemply" style="display: none">should be at least 1 character long (at most 30) with alphabets, digits and , - .</p>
+                    
+                    
+                    <br>
+                    <label for="language">(ii) C </label>
+                    <input type="radio" tabindex="52" name="clanguage" value="1" checked=""><div class="lebaeltext">Poor</div>
+                    <input type="radio" tabindex="53" name="clanguage" value="2"><div class="lebaeltext">Good</div>
+                    <input type="radio" tabindex="54" name="clanguage" value="3"><div class="lebaeltext">Excellent</div>
+                    <br>
+                    <label for="language">(iii) C++ </label>
+                    <input type="radio" tabindex="55" name="cpluslanguage" value="1" checked=""><div class="lebaeltext">Poor</div>
+                    <input type="radio" tabindex="56" name="cpluslanguage" value="2"><div class="lebaeltext">Good</div>
+                    <input type="radio" tabindex="57" name="cpluslanguage" value="3"><div class="lebaeltext">Excellent</div>
+                    <br>
+
+                    <label for="language">(iii) PHP </label>
+                    <input type="radio" tabindex="55" name="phplanguage" value="1" checked=""><div class="lebaeltext">Poor</div>
+                    <input type="radio" tabindex="56" name="phplanguage" value="2"><div class="lebaeltext">Good</div>
+                    <input type="radio" tabindex="57" name="phplanguage" value="3"><div class="lebaeltext">Excellent</div>
+                    <br>
+                    <label for="language">(iv) Java </label>
+                    <input type="radio" tabindex="58" name="java" value="1" checked=""><div class="lebaeltext">Poor</div>
+                    <input type="radio" tabindex="59" name="java" value="2"><div class="lebaeltext">Good</div>
+                    <input type="radio" tabindex="60" name="java" value="3"><div class="lebaeltext">Excellent</div>
+                    <br>
+                    <label for="language">(v) Any other (Specify) </label>
+                    <input type="text" tabindex="61" name="anyotherlanguage" maxlength="30" value="" class="tipTip">
+                    <input type="radio" tabindex="62" name="anyother" value="1" checked=""><div class="lebaeltext">Poor</div>
+                    <input type="radio" tabindex="63" name="anyother" value="2"><div class="lebaeltext">Good</div>
+                    <input type="radio" tabindex="64" name="anyother" value="3"><div class="lebaeltext">Excellent</div>
+                    <p id="Eanyother" style="display: none">should be at least 1 character long (at most 30) with alphabets, digit and , - .</p>
+                    
+                    
+                    <div class="fieldsetsample"></div>
+                    <div align="left"> Your Familiarity with Linux (Any variant) (Poor / good / excellent) : </div>
+                    <label for="linux">(i) Basic OS features </label>
+                    <input type="radio" tabindex="65" name="os" value="1" checked=""><div class="lebaeltext">Poor</div>
+                    <input type="radio" tabindex="66" name="os" value="2"><div class="lebaeltext">Good</div>
+                    <input type="radio" tabindex="67" name="os" value="3"><div class="lebaeltext">Excellent</div><br>
+                    <label for="linux">(ii) Utilities  </label>
+                    <input type="radio" tabindex="68" name="utilities" value="1" checked=""><div class="lebaeltext">Poor</div>
+                    <input type="radio" tabindex="69" name="utilities" value="2"><div class="lebaeltext">Good</div>
+                    <input type="radio" tabindex="70" name="utilities" value="3"><div class="lebaeltext">Excellent</div><br>
+                    <label for="linux">(iii) Shell Scripts  </label>
+                    <input type="radio" tabindex="71" name="shell" value="1" checked=""><div class="lebaeltext">Poor</div>
+                    <input type="radio" tabindex="72" name="shell" value="2"><div class="lebaeltext">Good</div>
+                    <input type="radio" tabindex="73" name="shell" value="3"><div class="lebaeltext">Excellent</div>
+                    <br>
+
+
+                    <div class="fieldsetsample"></div>
+
+                    <div align="left"> Have you done any programming or hardware development, for activities outside the prescribed syllabus (e.g. for technical competitions)? If so, provide brief details.   </div>
+                    <textarea name="extra" id="extra" tabindex="74" class="tipTip" -="" ;="" :"=""></textarea>
+
+                    <p id="Eextra" style="display: none">should be at least 5 character long (at most 150) with alphabets, digits and () , . " - ; :</p>
+                    
+                    
+                    <br>
+
+                    <div>Your  hobbies / Extra curricular activities   </div>
+                    <textarea name="hobbies" id="hobbies" tabindex="75" class="tipTip" -="" ;="" :"=""></textarea>
+
+                    <p id="Ehobbies" style="display: none">should be at least 5 character long (at most 150) with alphabets, digits and () , . " - ; :</p>
+                   
+                    
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Proposed Work Schedule</legend>
+                    <div>Period for Internship (Tentative): 09th May 2015 to 05th July 2015 (8 weeks) </div>
+                    <div>If you foresee any problem about joining date, then choose 'Different Period' option, and specify your choice of internship period. <b>We may consider exceptional candidates for a minimum 6 week duration</b>, provided the duration is in between 09th May 2015 to 05th July 2015.</div>
+                    <input type="radio" tabindex="79" name="duration" id="duration" value="8week" checked=""><div class="lebaeltext">09th May 2015 to 05th July 2015 (8 week)</div>
+                    
+                    <input type="radio" tabindex="80" name="duration" id="duration" value="none"><div class="lebaeltext">Different Period</div>
+                    <br>
+
+                    <label>Start Date :&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input type="text" id="dateproblem" name="dateproblem" value="">&nbsp;<script language="JavaScript">
+                        new tcal ({// form name
+                            'formname': 'summer',
+                            // input name
+                            'controlname': 'dateproblem'
+                        });
+
+                    </script><img src="./Summer Internship-2015 Registration Page_files/cal.gif" id="tcalico_1" onclick="A_TCALS[&#39;1&#39;].f_toggle()" class="tcalIcon" alt="Open Calendar">
+                    <p id="Edateproblem" style="display: none">Please select valid date</p>
+                    
+
+                    <span>End Date</span>
+                    <input type="text" id="dateproblem1" name="dateproblem1" value="">&nbsp;&nbsp;<script language="JavaScript">
+                        new tcal ({// form name
+                            'formname': 'summer',
+                            // input name
+                            'controlname': 'dateproblem1'
+                        });
+
+                    </script><img src="./Summer Internship-2015 Registration Page_files/cal.gif" id="tcalico_2" onclick="A_TCALS[&#39;2&#39;].f_toggle()" class="tcalIcon" alt="Open Calendar">
+                    <p id="Edateproblem1" style="display: none">Invalid internship period. Period should be in between 09th May to 05th July 2015. (Minimum 6 week period is required)</p>
+                    
+
+                    <br> <br>
+                    
+                </fieldset>
+                <fieldset id="project">
+                    <legend>College Details</legend>
+                    <br>
+
+                    <label for="university">College Name : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <select name="collegename" id="collegename" tabindex="86" onchange="toggleField();">
+                        <option value="select">-Select college-</option>
+                        
+                        <option value="ABV-IIITM Gwalior">ABV-IIITM Gwalior</option>
+                        
+                        <option value="ABV-IIITM Gwalior">ABV-IIITM Gwalior</option>
+                        
+                        <option value="Acropolis Institute of Technology &amp; Research , Bhopal">Acropolis Institute of Technology &amp; Research , Bhopal</option>
+                        
+                        <option value="Acropolis Institute of Technology &amp; Research , Bhopal">Acropolis Institute of Technology &amp; Research , Bhopal</option>
+                        
+                        <option value="Acropolis Institute of Technology &amp; Research , Indore">Acropolis Institute of Technology &amp; Research , Indore</option>
+                        
+                        <option value="Acropolis Institute of Technology &amp; Research , Indore">Acropolis Institute of Technology &amp; Research , Indore</option>
+                        
+                        <option value="Aditya Engineering College, Surampalem">Aditya Engineering College, Surampalem</option>
+                        
+                        <option value="Aditya Engineering College, Surampalem">Aditya Engineering College, Surampalem</option>
+                        
+                        <option value="Alwar Institute of Engineering &amp; Technology, Alwar">Alwar Institute of Engineering &amp; Technology, Alwar</option>
+                        
+                        <option value="Alwar Institute of Engineering &amp; Technology, Alwar">Alwar Institute of Engineering &amp; Technology, Alwar</option>
+                        
+                        <option value="Amity School of Engineering &amp; Technology, Noida">Amity School of Engineering &amp; Technology, Noida</option>
+                        
+                        <option value="Amity School of Engineering &amp; Technology, Noida">Amity School of Engineering &amp; Technology, Noida</option>
+                        
+                        <option value="Amity University, Gurgaon">Amity University, Gurgaon</option>
+                        
+                        <option value="Amity University, Gurgaon">Amity University, Gurgaon</option>
+                        
+                        <option value="Amity University, Jaipur">Amity University, Jaipur</option>
+                        
+                        <option value="Amity University, Jaipur">Amity University, Jaipur</option>
+                        
+                        <option value="Amity University, Lucknow Campus">Amity University, Lucknow Campus</option>
+                        
+                        <option value="Amity University, Lucknow Campus">Amity University, Lucknow Campus</option>
+                        
+                        <option value="Amity University Madhya Pradesh">Amity University Madhya Pradesh</option>
+                        
+                        <option value="Amity University Madhya Pradesh">Amity University Madhya Pradesh</option>
+                        
+                        <option value="Amrita School of Engineering, Amritapuri">Amrita School of Engineering, Amritapuri</option>
+                        
+                        <option value="Amrita School of Engineering, Amritapuri">Amrita School of Engineering, Amritapuri</option>
+                        
+                        <option value="Amrita School of Engineering, Banglore">Amrita School of Engineering, Banglore</option>
+                        
+                        <option value="Amrita School of Engineering, Banglore">Amrita School of Engineering, Banglore</option>
+                        
+                        <option value="Amrita School of Engineering, Coimbatore">Amrita School of Engineering, Coimbatore</option>
+                        
+                        <option value="Amrita School of Engineering, Coimbatore">Amrita School of Engineering, Coimbatore</option>
+                        
+                        <option value="Andhra University College of Engineering for Women">Andhra University College of Engineering for Women</option>
+                        
+                        <option value="Andhra University College of Engineering for Women">Andhra University College of Engineering for Women</option>
+                        
+                        <option value="Anjuman College of Engineering &amp; Technology, Nagpur">Anjuman College of Engineering &amp; Technology, Nagpur</option>
+                        
+                        <option value="Anjuman College of Engineering &amp; Technology, Nagpur">Anjuman College of Engineering &amp; Technology, Nagpur</option>
+                        
+                        <option value="Annamacharya Institute of Technology &amp; Sciences">Annamacharya Institute of Technology &amp; Sciences</option>
+                        
+                        <option value="Annamacharya Institute of Technology &amp; Sciences">Annamacharya Institute of Technology &amp; Sciences</option>
+                        
+                        <option value="Anna University-MIT">Anna University-MIT</option>
+                        
+                        <option value="Anna University-MIT">Anna University-MIT</option>
+                        
+                        <option value="Anna University, Tirunelveli">Anna University, Tirunelveli</option>
+                        
+                        <option value="Anna University, Tirunelveli">Anna University, Tirunelveli</option>
+                        
+                        <option value="ANU College of Engineering &amp; Technology">ANU College of Engineering &amp; Technology</option>
+                        
+                        <option value="ANU College of Engineering &amp; Technology">ANU College of Engineering &amp; Technology</option>
+                        
+                        <option value="Apeejay College of Engineering, Sohna">Apeejay College of Engineering, Sohna</option>
+                        
+                        <option value="Apeejay College of Engineering, Sohna">Apeejay College of Engineering, Sohna</option>
+                        
+                        <option value="Arjun College of Technology, Hyderabad">Arjun College of Technology, Hyderabad</option>
+                        
+                        <option value="Arjun College of Technology, Hyderabad">Arjun College of Technology, Hyderabad</option>
+                        
+                        <option value="Army Institute of Technology, Pune">Army Institute of Technology, Pune</option>
+                        
+                        <option value="Army Institute of Technology, Pune">Army Institute of Technology, Pune</option>
+                        
+                        <option value="Arya College of Engg. and I.T. , Jaipur">Arya College of Engg. and I.T. , Jaipur</option>
+                        
+                        <option value="Arya College of Engg. and I.T. , Jaipur">Arya College of Engg. and I.T. , Jaipur</option>
+                        
+                        <option value="ARYA Institute of Engineering &amp; Technology, Kukas">ARYA Institute of Engineering &amp; Technology, Kukas</option>
+                        
+                        <option value="ARYA Institute of Engineering &amp; Technology, Kukas">ARYA Institute of Engineering &amp; Technology, Kukas</option>
+                        
+                        <option value="Atharva College of Engineering, Mumbai">Atharva College of Engineering, Mumbai</option>
+                        
+                        <option value="Atharva College of Engineering, Mumbai">Atharva College of Engineering, Mumbai</option>
+                        
+                        <option value="Atmiya Institute of Technology &amp; Science, Rajkot">Atmiya Institute of Technology &amp; Science, Rajkot</option>
+                        
+                        <option value="Atmiya Institute of Technology &amp; Science, Rajkot">Atmiya Institute of Technology &amp; Science, Rajkot</option>
+                        
+                        <option value="AU College of Engineering, Visakhapatnam">AU College of Engineering, Visakhapatnam</option>
+                        
+                        <option value="AU College of Engineering, Visakhapatnam">AU College of Engineering, Visakhapatnam</option>
+                        
+                        <option value="Audisankara College of Eng. &amp; Tech., Gudur">Audisankara College of Eng. &amp; Tech., Gudur</option>
+                        
+                        <option value="Audisankara College of Eng. &amp; Tech., Gudur">Audisankara College of Eng. &amp; Tech., Gudur</option>
+                        
+                        <option value="Auroras Scientific Technological &amp; Research Academy, Hyderabad">Auroras Scientific Technological &amp; Research Academy, Hyderabad</option>
+                        
+                        <option value="Auroras Scientific Technological &amp; Research Academy, Hyderabad">Auroras Scientific Technological &amp; Research Academy, Hyderabad</option>
+                        
+                        <option value="Balaji Institute of Technology and Science, Warangal">Balaji Institute of Technology and Science, Warangal</option>
+                        
+                        <option value="Balaji Institute of Technology and Science, Warangal">Balaji Institute of Technology and Science, Warangal</option>
+                        
+                        <option value="Baldev Ram Mirdha Institute Of Technology, Jaipur">Baldev Ram Mirdha Institute Of Technology, Jaipur</option>
+                        
+                        <option value="Baldev Ram Mirdha Institute Of Technology, Jaipur">Baldev Ram Mirdha Institute Of Technology, Jaipur</option>
+                        
+                        <option value="Banasthali University, Jaipur">Banasthali University, Jaipur</option>
+                        
+                        <option value="Banasthali University, Jaipur">Banasthali University, Jaipur</option>
+                        
+                        <option value="Bankura Unnayani Institute of Engineering, Pohabagan">Bankura Unnayani Institute of Engineering, Pohabagan</option>
+                        
+                        <option value="Bankura Unnayani Institute of Engineering, Pohabagan">Bankura Unnayani Institute of Engineering, Pohabagan</option>
+                        
+                        <option value="Bapatla Engineering College">Bapatla Engineering College</option>
+                        
+                        <option value="Bapatla Engineering College">Bapatla Engineering College</option>
+                        
+                        <option value="BBDESGI,Lucknow">BBDESGI,Lucknow</option>
+                        
+                        <option value="BBDESGI,Lucknow">BBDESGI,Lucknow</option>
+                        
+                        <option value="BBD NIEC , Lucknow">BBD NIEC , Lucknow</option>
+                        
+                        <option value="BBD NIEC , Lucknow">BBD NIEC , Lucknow</option>
+                        
+                        <option value="Bengal College of Engg. and Technology, Durgapur">Bengal College of Engg. and Technology, Durgapur</option>
+                        
+                        <option value="Bengal College of Engg. and Technology, Durgapur">Bengal College of Engg. and Technology, Durgapur</option>
+                        
+                        <option value="Bengal Engineering And Science University">Bengal Engineering And Science University</option>
+                        
+                        <option value="Bengal Engineering And Science University">Bengal Engineering And Science University</option>
+                        
+                        <option value="Bhagat Phool Singh Mahila Vishwavidyalaya">Bhagat Phool Singh Mahila Vishwavidyalaya</option>
+                        
+                        <option value="Bhagat Phool Singh Mahila Vishwavidyalaya">Bhagat Phool Singh Mahila Vishwavidyalaya</option>
+                        
+                        <option value="Bhagwan Mahavir College of Engineering &amp; Technology">Bhagwan Mahavir College of Engineering &amp; Technology</option>
+                        
+                        <option value="Bhagwan Mahavir College of Engineering &amp; Technology">Bhagwan Mahavir College of Engineering &amp; Technology</option>
+                        
+                        <option value="Bhagwan Parshuram Institute Of Technology, New Delhi">Bhagwan Parshuram Institute Of Technology, New Delhi</option>
+                        
+                        <option value="Bhagwan Parshuram Institute Of Technology, New Delhi">Bhagwan Parshuram Institute Of Technology, New Delhi</option>
+                        
+                        <option value="Bharathidasan University, Tiruchirappalli">Bharathidasan University, Tiruchirappalli</option>
+                        
+                        <option value="Bharathidasan University, Tiruchirappalli">Bharathidasan University, Tiruchirappalli</option>
+                        
+                        <option value="Bhartiya Vidyapeeth College Of Engineering">Bhartiya Vidyapeeth College Of Engineering</option>
+                        
+                        <option value="Bhartiya Vidyapeeth College Of Engineering">Bhartiya Vidyapeeth College Of Engineering</option>
+                        
+                        <option value="B.H.Gardi College of Engineering &amp; Technology, Rajkot">B.H.Gardi College of Engineering &amp; Technology, Rajkot</option>
+                        
+                        <option value="B.H.Gardi College of Engineering &amp; Technology, Rajkot">B.H.Gardi College of Engineering &amp; Technology, Rajkot</option>
+                        
+                        <option value="Bhilai Institute of Technology, Durg">Bhilai Institute of Technology, Durg</option>
+                        
+                        <option value="Bhilai Institute of Technology, Durg">Bhilai Institute of Technology, Durg</option>
+                        
+                        <option value="Birbhum Institute of Engineering &amp; Technology, Kolkata">Birbhum Institute of Engineering &amp; Technology, Kolkata</option>
+                        
+                        <option value="Birbhum Institute of Engineering &amp; Technology, Kolkata">Birbhum Institute of Engineering &amp; Technology, Kolkata</option>
+                        
+                        <option value="Birla Institute of Technology, Deoghar">Birla Institute of Technology, Deoghar</option>
+                        
+                        <option value="Birla Institute of Technology, Deoghar">Birla Institute of Technology, Deoghar</option>
+                        
+                        <option value="Birla Institute of Technology, Jaipur">Birla Institute of Technology, Jaipur</option>
+                        
+                        <option value="Birla Institute of Technology, Jaipur">Birla Institute of Technology, Jaipur</option>
+                        
+                        <option value="Birla Institute of Technology, Mesra">Birla Institute of Technology, Mesra</option>
+                        
+                        <option value="Birla Institute of Technology, Mesra">Birla Institute of Technology, Mesra</option>
+                        
+                        <option value="Birsa Institute of Technology, Sindri">Birsa Institute of Technology, Sindri</option>
+                        
+                        <option value="Birsa Institute of Technology, Sindri">Birsa Institute of Technology, Sindri</option>
+                        
+                        <option value="BITS Goa">BITS Goa</option>
+                        
+                        <option value="BITS Goa">BITS Goa</option>
+                        
+                        <option value="BITS, Hydrabad">BITS, Hydrabad</option>
+                        
+                        <option value="BITS, Hydrabad">BITS, Hydrabad</option>
+                        
+                        <option value="BITS,Pilani">BITS,Pilani</option>
+                        
+                        <option value="BITS,Pilani">BITS,Pilani</option>
+                        
+                        <option value="Buddha Institute of Technology,Gorakhpur">Buddha Institute of Technology,Gorakhpur</option>
+                        
+                        <option value="Buddha Institute of Technology,Gorakhpur">Buddha Institute of Technology,Gorakhpur</option>
+                        
+                        <option value="Bundelkhand Institute Of Engineering And Technology, Jhansi">Bundelkhand Institute Of Engineering And Technology, Jhansi</option>
+                        
+                        <option value="Bundelkhand Institute Of Engineering And Technology, Jhansi">Bundelkhand Institute Of Engineering And Technology, Jhansi</option>
+                        
+                        <option value="B.V.Bhoomraddi College of Engineering &amp; Technology">B.V.Bhoomraddi College of Engineering &amp; Technology</option>
+                        
+                        <option value="B.V.Bhoomraddi College of Engineering &amp; Technology">B.V.Bhoomraddi College of Engineering &amp; Technology</option>
+                        
+                        <option value="BVM Engineering College V.Vidyanagar, Gujarat">BVM Engineering College V.Vidyanagar, Gujarat</option>
+                        
+                        <option value="BVM Engineering College V.Vidyanagar, Gujarat">BVM Engineering College V.Vidyanagar, Gujarat</option>
+                        
+                        <option value="Camellia School of Engineering &amp; Technology, Barasat">Camellia School of Engineering &amp; Technology, Barasat</option>
+                        
+                        <option value="Camellia School of Engineering &amp; Technology, Barasat">Camellia School of Engineering &amp; Technology, Barasat</option>
+                        
+                        <option value="Central University Of Bihar, Patna">Central University Of Bihar, Patna</option>
+                        
+                        <option value="Central University Of Bihar, Patna">Central University Of Bihar, Patna</option>
+                        
+                        <option value="Chaitanya Bharathi Institute of Technology,Hyderabad">Chaitanya Bharathi Institute of Technology,Hyderabad</option>
+                        
+                        <option value="Chaitanya Bharathi Institute of Technology,Hyderabad">Chaitanya Bharathi Institute of Technology,Hyderabad</option>
+                        
+                        <option value="Chandigarh Group of Colleges">Chandigarh Group of Colleges</option>
+                        
+                        <option value="Chandigarh Group of Colleges">Chandigarh Group of Colleges</option>
+                        
+                        <option value="Charotar University of Science and Technology, Anand">Charotar University of Science and Technology, Anand</option>
+                        
+                        <option value="Charotar University of Science and Technology, Anand">Charotar University of Science and Technology, Anand</option>
+                        
+                        <option value="Chartered Institute of Technology">Chartered Institute of Technology</option>
+                        
+                        <option value="Chartered Institute of Technology">Chartered Institute of Technology</option>
+                        
+                        <option value="Chennai Institute of Technology,Chennai">Chennai Institute of Technology,Chennai</option>
+                        
+                        <option value="Chennai Institute of Technology,Chennai">Chennai Institute of Technology,Chennai</option>
+                        
+                        <option value="Chhatrapati Shahu Ji Maharaj University, Kanpur">Chhatrapati Shahu Ji Maharaj University, Kanpur</option>
+                        
+                        <option value="Chhatrapati Shahu Ji Maharaj University, Kanpur">Chhatrapati Shahu Ji Maharaj University, Kanpur</option>
+                        
+                        <option value="Chitkara University, Himachal Pradesh">Chitkara University, Himachal Pradesh</option>
+                        
+                        <option value="Chitkara University, Himachal Pradesh">Chitkara University, Himachal Pradesh</option>
+                        
+                        <option value="Christ University Faculty of Engineering,Bangalore">Christ University Faculty of Engineering,Bangalore</option>
+                        
+                        <option value="Christ University Faculty of Engineering,Bangalore">Christ University Faculty of Engineering,Bangalore</option>
+                        
+                        <option value="CK Pithawalla College of Engineering and Technology, Surat">CK Pithawalla College of Engineering and Technology, Surat</option>
+                        
+                        <option value="CK Pithawalla College of Engineering and Technology, Surat">CK Pithawalla College of Engineering and Technology, Surat</option>
+                        
+                        <option value="CMR Institute of Technology, Bangalore">CMR Institute of Technology, Bangalore</option>
+                        
+                        <option value="CMR Institute of Technology, Bangalore">CMR Institute of Technology, Bangalore</option>
+                        
+                        <option value="Cochin University College of Engineering">Cochin University College of Engineering</option>
+                        
+                        <option value="Cochin University College of Engineering">Cochin University College of Engineering</option>
+                        
+                        <option value="Cochin University Of Science And Technology">Cochin University Of Science And Technology</option>
+                        
+                        <option value="Cochin University Of Science And Technology">Cochin University Of Science And Technology</option>
+                        
+                        <option value="Coimbatore Institute of Technology, Coimbatore">Coimbatore Institute of Technology, Coimbatore</option>
+                        
+                        <option value="Coimbatore Institute of Technology, Coimbatore">Coimbatore Institute of Technology, Coimbatore</option>
+                        
+                        <option value="College of Engineering and Technology, Bhubaneswar">College of Engineering and Technology, Bhubaneswar</option>
+                        
+                        <option value="College of Engineering and Technology, Bhubaneswar">College of Engineering and Technology, Bhubaneswar</option>
+                        
+                        <option value="College of Engineering, Guinidy">College of Engineering, Guinidy</option>
+                        
+                        <option value="College of Engineering, Guinidy">College of Engineering, Guinidy</option>
+                        
+                        <option value="College Of Engineering Pune">College Of Engineering Pune</option>
+                        
+                        <option value="College Of Engineering Pune">College Of Engineering Pune</option>
+                        
+                        <option value="College of Technology and Engineering, Udaipur">College of Technology and Engineering, Udaipur</option>
+                        
+                        <option value="College of Technology and Engineering, Udaipur">College of Technology and Engineering, Udaipur</option>
+                        
+                        <option value="College of Technology, Pantnagar">College of Technology, Pantnagar</option>
+                        
+                        <option value="College of Technology, Pantnagar">College of Technology, Pantnagar</option>
+                        
+                        <option value="Cummins College of Engineering for Women">Cummins College of Engineering for Women</option>
+                        
+                        <option value="Cummins College of Engineering for Women">Cummins College of Engineering for Women</option>
+                        
+                        <option value="CVR College of Engineering, Hyderabad">CVR College of Engineering, Hyderabad</option>
+                        
+                        <option value="CVR College of Engineering, Hyderabad">CVR College of Engineering, Hyderabad</option>
+                        
+                        <option value="CVSR college of Engineering">CVSR college of Engineering</option>
+                        
+                        <option value="CVSR college of Engineering">CVSR college of Engineering</option>
+                        
+                        <option value="DA-IICT">DA-IICT</option>
+                        
+                        <option value="DA-IICT">DA-IICT</option>
+                        
+                        <option value="Dehradun Institue of Technology">Dehradun Institue of Technology</option>
+                        
+                        <option value="Dehradun Institue of Technology">Dehradun Institue of Technology</option>
+                        
+                        <option value="Delhi College of Engineering, Delhi">Delhi College of Engineering, Delhi</option>
+                        
+                        <option value="Delhi College of Engineering, Delhi">Delhi College of Engineering, Delhi</option>
+                        
+                        <option value="Dr. Ambedkar Institute Of Technology for Handicapped, Kanpur">Dr. Ambedkar Institute Of Technology for Handicapped, Kanpur</option>
+                        
+                        <option value="Dr. Ambedkar Institute Of Technology for Handicapped, Kanpur">Dr. Ambedkar Institute Of Technology for Handicapped, Kanpur</option>
+                        
+                        <option value="Dr.B.R.Ambedkar National Institute of Technology, Jalandhar">Dr.B.R.Ambedkar National Institute of Technology, Jalandhar</option>
+                        
+                        <option value="Dr.B.R.Ambedkar National Institute of Technology, Jalandhar">Dr.B.R.Ambedkar National Institute of Technology, Jalandhar</option>
+                        
+                        <option value="Dr.K.N.M.I.E.T">Dr.K.N.M.I.E.T</option>
+                        
+                        <option value="Dr.K.N.M.I.E.T">Dr.K.N.M.I.E.T</option>
+                        
+                        <option value="DUIET">DUIET</option>
+                        
+                        <option value="DUIET">DUIET</option>
+                        
+                        <option value="DVR College of Engineering &amp; Technology, Kashipur">DVR College of Engineering &amp; Technology, Kashipur</option>
+                        
+                        <option value="DVR College of Engineering &amp; Technology, Kashipur">DVR College of Engineering &amp; Technology, Kashipur</option>
+                        
+                        <option value="Dwarkadas J. Sanghvi College of Engineering, Mumbai">Dwarkadas J. Sanghvi College of Engineering, Mumbai</option>
+                        
+                        <option value="Dwarkadas J. Sanghvi College of Engineering, Mumbai">Dwarkadas J. Sanghvi College of Engineering, Mumbai</option>
+                        
+                        <option value="Engineering College Bikaner, Rajasthan">Engineering College Bikaner, Rajasthan</option>
+                        
+                        <option value="Engineering College Bikaner, Rajasthan">Engineering College Bikaner, Rajasthan</option>
+                        
+                        <option value="Galgotias College of Engineering &amp; Technology">Galgotias College of Engineering &amp; Technology</option>
+                        
+                        <option value="Galgotias College of Engineering &amp; Technology">Galgotias College of Engineering &amp; Technology</option>
+                        
+                        <option value="Gayatri Vidya Parishad College of Engineering, Visakhapatnam">Gayatri Vidya Parishad College of Engineering, Visakhapatnam</option>
+                        
+                        <option value="Gayatri Vidya Parishad College of Engineering, Visakhapatnam">Gayatri Vidya Parishad College of Engineering, Visakhapatnam</option>
+                        
+                        <option value="G. B. Pant Engineering College, New Delhi">G. B. Pant Engineering College, New Delhi</option>
+                        
+                        <option value="G. B. Pant Engineering College, New Delhi">G. B. Pant Engineering College, New Delhi</option>
+                        
+                        <option value="Geetanjali Institute of Technical Studies,Udaipur">Geetanjali Institute of Technical Studies,Udaipur</option>
+                        
+                        <option value="Geetanjali Institute of Technical Studies,Udaipur">Geetanjali Institute of Technical Studies,Udaipur</option>
+                        
+                        <option value="G.H. Patel College of Engg. &amp; Technology,Gujarat">G.H. Patel College of Engg. &amp; Technology,Gujarat</option>
+                        
+                        <option value="G.H. Patel College of Engg. &amp; Technology,Gujarat">G.H. Patel College of Engg. &amp; Technology,Gujarat</option>
+                        
+                        <option value="G.H.Raisoni College of Engineering, Nagpur">G.H.Raisoni College of Engineering, Nagpur</option>
+                        
+                        <option value="G.H.Raisoni College of Engineering, Nagpur">G.H.Raisoni College of Engineering, Nagpur</option>
+                        
+                        <option value="GITAM Institute of Technology">GITAM Institute of Technology</option>
+                        
+                        <option value="GITAM Institute of Technology">GITAM Institute of Technology</option>
+                        
+                        <option value="GLA University, Mathura">GLA University, Mathura</option>
+                        
+                        <option value="GLA University, Mathura">GLA University, Mathura</option>
+                        
+                        <option value="Global Institute of Technology, Jaipur">Global Institute of Technology, Jaipur</option>
+                        
+                        <option value="Global Institute of Technology, Jaipur">Global Institute of Technology, Jaipur</option>
+                        
+                        <option value="GMR Institute of Technology">GMR Institute of Technology</option>
+                        
+                        <option value="GMR Institute of Technology">GMR Institute of Technology</option>
+                        
+                        <option value="G. Narayanamma Institute of Technology and Science, Hyderabad">G. Narayanamma Institute of Technology and Science, Hyderabad</option>
+                        
+                        <option value="G. Narayanamma Institute of Technology and Science, Hyderabad">G. Narayanamma Institute of Technology and Science, Hyderabad</option>
+                        
+                        <option value="Godavari Institute of Engineering and Technology">Godavari Institute of Engineering and Technology</option>
+                        
+                        <option value="Godavari Institute of Engineering and Technology">Godavari Institute of Engineering and Technology</option>
+                        
+                        <option value="Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad">Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad</option>
+                        
+                        <option value="Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad">Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad</option>
+                        
+                        <option value="Government College of Engineering, Kalahandi">Government College of Engineering, Kalahandi</option>
+                        
+                        <option value="Government College of Engineering, Kalahandi">Government College of Engineering, Kalahandi</option>
+                        
+                        <option value="Government College of Engineering &amp; Textile Technology, Serampore">Government College of Engineering &amp; Textile Technology, Serampore</option>
+                        
+                        <option value="Government College of Engineering &amp; Textile Technology, Serampore">Government College of Engineering &amp; Textile Technology, Serampore</option>
+                        
+                        <option value="Government Engineering College, Ajmer">Government Engineering College, Ajmer</option>
+                        
+                        <option value="Government Engineering College, Ajmer">Government Engineering College, Ajmer</option>
+                        
+                        <option value="Government Engineering College, Modasa">Government Engineering College, Modasa</option>
+                        
+                        <option value="Government Engineering College, Modasa">Government Engineering College, Modasa</option>
+                        
+                        <option value="Government Engineering College, Rajkot">Government Engineering College, Rajkot</option>
+                        
+                        <option value="Government Engineering College, Rajkot">Government Engineering College, Rajkot</option>
+                        
+                        <option value="Government Women Engineering College, Ajmer">Government Women Engineering College, Ajmer</option>
+                        
+                        <option value="Government Women Engineering College, Ajmer">Government Women Engineering College, Ajmer</option>
+                        
+                        <option value="Gurukula Kangri Vishwavidyalaya, Faculty of Engineering &amp; Technology">Gurukula Kangri Vishwavidyalaya, Faculty of Engineering &amp; Technology</option>
+                        
+                        <option value="Gurukula Kangri Vishwavidyalaya, Faculty of Engineering &amp; Technology">Gurukula Kangri Vishwavidyalaya, Faculty of Engineering &amp; Technology</option>
+                        
+                        <option value="Guru Nanak Dev University, Amritsar">Guru Nanak Dev University, Amritsar</option>
+                        
+                        <option value="Guru Nanak Dev University, Amritsar">Guru Nanak Dev University, Amritsar</option>
+                        
+                        <option value="Guru Nanak Dev University, Jalandhar Campus">Guru Nanak Dev University, Jalandhar Campus</option>
+                        
+                        <option value="Guru Nanak Dev University, Jalandhar Campus">Guru Nanak Dev University, Jalandhar Campus</option>
+                        
+                        <option value="GVP College of Eng. for Women, Madhurawada">GVP College of Eng. for Women, Madhurawada</option>
+                        
+                        <option value="GVP College of Eng. for Women, Madhurawada">GVP College of Eng. for Women, Madhurawada</option>
+                        
+                        <option value="Gyan Ganga Institute of Technology &amp; Sciences, Jabalpur">Gyan Ganga Institute of Technology &amp; Sciences, Jabalpur</option>
+                        
+                        <option value="Gyan Ganga Institute of Technology &amp; Sciences, Jabalpur">Gyan Ganga Institute of Technology &amp; Sciences, Jabalpur</option>
+                        
+                        <option value="Gyan Vihar School of Engineering and Technology, Jaipur">Gyan Vihar School of Engineering and Technology, Jaipur</option>
+                        
+                        <option value="Gyan Vihar School of Engineering and Technology, Jaipur">Gyan Vihar School of Engineering and Technology, Jaipur</option>
+                        
+                        <option value="Haldia Institute of Technology">Haldia Institute of Technology</option>
+                        
+                        <option value="Haldia Institute of Technology">Haldia Institute of Technology</option>
+                        
+                        <option value="Harcourt Butler Technological Institute, Kanpur">Harcourt Butler Technological Institute, Kanpur</option>
+                        
+                        <option value="Harcourt Butler Technological Institute, Kanpur">Harcourt Butler Technological Institute, Kanpur</option>
+                        
+                        <option value="IET- DAVV, Indore">IET- DAVV, Indore</option>
+                        
+                        <option value="IET- DAVV, Indore">IET- DAVV, Indore</option>
+                        
+                        <option value="IIIT Allahabad">IIIT Allahabad</option>
+                        
+                        <option value="IIIT Allahabad">IIIT Allahabad</option>
+                        
+                        <option value="IIIT Amethi">IIIT Amethi</option>
+                        
+                        <option value="IIIT Amethi">IIIT Amethi</option>
+                        
+                        <option value="IIIT Delhi">IIIT Delhi</option>
+                        
+                        <option value="IIIT Delhi">IIIT Delhi</option>
+                        
+                        <option value="IIITDM Jabalpur">IIITDM Jabalpur</option>
+                        
+                        <option value="IIITDM Jabalpur">IIITDM Jabalpur</option>
+                        
+                        <option value="IIIT Hyderabad">IIIT Hyderabad</option>
+                        
+                        <option value="IIIT Hyderabad">IIIT Hyderabad</option>
+                        
+                        <option value="IIT Bhubaneswar">IIT Bhubaneswar</option>
+                        
+                        <option value="IIT Bhubaneswar">IIT Bhubaneswar</option>
+                        
+                        <option value="IIT Bombay">IIT Bombay</option>
+                        
+                        <option value="IIT Bombay">IIT Bombay</option>
+                        
+                        <option value="IIT Delhi">IIT Delhi</option>
+                        
+                        <option value="IIT Delhi">IIT Delhi</option>
+                        
+                        <option value="IIT Gandhinagar">IIT Gandhinagar</option>
+                        
+                        <option value="IIT Gandhinagar">IIT Gandhinagar</option>
+                        
+                        <option value="IIT Guwahati">IIT Guwahati</option>
+                        
+                        <option value="IIT Guwahati">IIT Guwahati</option>
+                        
+                        <option value="IIT Hyderabad">IIT Hyderabad</option>
+                        
+                        <option value="IIT Hyderabad">IIT Hyderabad</option>
+                        
+                        <option value="IIT Indore">IIT Indore</option>
+                        
+                        <option value="IIT Indore">IIT Indore</option>
+                        
+                        <option value="IIT Kanpur">IIT Kanpur</option>
+                        
+                        <option value="IIT Kanpur">IIT Kanpur</option>
+                        
+                        <option value="IIT Kharagpur">IIT Kharagpur</option>
+                        
+                        <option value="IIT Kharagpur">IIT Kharagpur</option>
+                        
+                        <option value="IIT Madras">IIT Madras</option>
+                        
+                        <option value="IIT Madras">IIT Madras</option>
+                        
+                        <option value="IIT Patna">IIT Patna</option>
+                        
+                        <option value="IIT Patna">IIT Patna</option>
+                        
+                        <option value="IIT Rajasthan">IIT Rajasthan</option>
+                        
+                        <option value="IIT Rajasthan">IIT Rajasthan</option>
+                        
+                        <option value="IIT Roorkee">IIT Roorkee</option>
+                        
+                        <option value="IIT Roorkee">IIT Roorkee</option>
+                        
+                        <option value="IIT Ropar">IIT Ropar</option>
+                        
+                        <option value="IIT Ropar">IIT Ropar</option>
+                        
+                        <option value="IMS Engineering College, Ghaziabad">IMS Engineering College, Ghaziabad</option>
+                        
+                        <option value="IMS Engineering College, Ghaziabad">IMS Engineering College, Ghaziabad</option>
+                        
+                        <option value="Inderprastha Engineering College">Inderprastha Engineering College</option>
+                        
+                        <option value="Inderprastha Engineering College">Inderprastha Engineering College</option>
+                        
+                        <option value="Indian School of Mines, Dhanbad">Indian School of Mines, Dhanbad</option>
+                        
+                        <option value="Indian School of Mines, Dhanbad">Indian School of Mines, Dhanbad</option>
+                        
+                        <option value="Indira Gandhi Institute of Technology, Delhi">Indira Gandhi Institute of Technology, Delhi</option>
+                        
+                        <option value="Indira Gandhi Institute of Technology, Delhi">Indira Gandhi Institute of Technology, Delhi</option>
+                        
+                        <option value="Institute of Advanced Mgmt And Technology, Meerut">Institute of Advanced Mgmt And Technology, Meerut</option>
+                        
+                        <option value="Institute of Advanced Mgmt And Technology, Meerut">Institute of Advanced Mgmt And Technology, Meerut</option>
+                        
+                        <option value="Institute of Engineering &amp; Management, Kolkata">Institute of Engineering &amp; Management, Kolkata</option>
+                        
+                        <option value="Institute of Engineering &amp; Management, Kolkata">Institute of Engineering &amp; Management, Kolkata</option>
+                        
+                        <option value="Institute of Engineering &amp; Technology, Alwar">Institute of Engineering &amp; Technology, Alwar</option>
+                        
+                        <option value="Institute of Engineering &amp; Technology, Alwar">Institute of Engineering &amp; Technology, Alwar</option>
+                        
+                        <option value="Institute of Technical Education and Research">Institute of Technical Education and Research</option>
+                        
+                        <option value="Institute of Technical Education and Research">Institute of Technical Education and Research</option>
+                        
+                        <option value="Institute of Technology and Management, Gurgaon">Institute of Technology and Management, Gurgaon</option>
+                        
+                        <option value="Institute of Technology and Management, Gurgaon">Institute of Technology and Management, Gurgaon</option>
+                        
+                        <option value="Institute of Technology and Marine Engineering (ITME), Kolkata">Institute of Technology and Marine Engineering (ITME), Kolkata</option>
+                        
+                        <option value="Institute of Technology and Marine Engineering (ITME), Kolkata">Institute of Technology and Marine Engineering (ITME), Kolkata</option>
+                        
+                        <option value="Institute of Technology,Guru Ghasidas University">Institute of Technology,Guru Ghasidas University</option>
+                        
+                        <option value="Institute of Technology,Guru Ghasidas University">Institute of Technology,Guru Ghasidas University</option>
+                        
+                        <option value="Integral University, Lucknow">Integral University, Lucknow</option>
+                        
+                        <option value="Integral University, Lucknow">Integral University, Lucknow</option>
+                        
+                        <option value="IPS Academy, Indore">IPS Academy, Indore</option>
+                        
+                        <option value="IPS Academy, Indore">IPS Academy, Indore</option>
+                        
+                        <option value="ISIM, Mysore">ISIM, Mysore</option>
+                        
+                        <option value="ISIM, Mysore">ISIM, Mysore</option>
+                        
+                        <option value="IT-BHU">IT-BHU</option>
+                        
+                        <option value="IT-BHU">IT-BHU</option>
+                        
+                        <option value="ITM University, Gurgaon">ITM University, Gurgaon</option>
+                        
+                        <option value="ITM University, Gurgaon">ITM University, Gurgaon</option>
+                        
+                        <option value="Jabalpur Engineering College, Jabalpur">Jabalpur Engineering College, Jabalpur</option>
+                        
+                        <option value="Jabalpur Engineering College, Jabalpur">Jabalpur Engineering College, Jabalpur</option>
+                        
+                        <option value="Jadavpur University, Kolkata">Jadavpur University, Kolkata</option>
+                        
+                        <option value="Jadavpur University, Kolkata">Jadavpur University, Kolkata</option>
+                        
+                        <option value="Jagan Nath Gupta Institute of Technology, Jaipur">Jagan Nath Gupta Institute of Technology, Jaipur</option>
+                        
+                        <option value="Jagan Nath Gupta Institute of Technology, Jaipur">Jagan Nath Gupta Institute of Technology, Jaipur</option>
+                        
+                        <option value="Jaipur Engineering College and Research Centre">Jaipur Engineering College and Research Centre</option>
+                        
+                        <option value="Jaipur Engineering College and Research Centre">Jaipur Engineering College and Research Centre</option>
+                        
+                        <option value="Jaipur Engineering College, Kukas">Jaipur Engineering College, Kukas</option>
+                        
+                        <option value="Jaipur Engineering College, Kukas">Jaipur Engineering College, Kukas</option>
+                        
+                        <option value="Jalpaiguri Government Engineering College">Jalpaiguri Government Engineering College</option>
+                        
+                        <option value="Jalpaiguri Government Engineering College">Jalpaiguri Government Engineering College</option>
+                        
+                        <option value="Jamia Milia Islamia, New Delhi">Jamia Milia Islamia, New Delhi</option>
+                        
+                        <option value="Jamia Milia Islamia, New Delhi">Jamia Milia Islamia, New Delhi</option>
+                        
+                        <option value="Jawaharlal Darda Institute of Engineering and Technology, Yavatmal">Jawaharlal Darda Institute of Engineering and Technology, Yavatmal</option>
+                        
+                        <option value="Jawaharlal Darda Institute of Engineering and Technology, Yavatmal">Jawaharlal Darda Institute of Engineering and Technology, Yavatmal</option>
+                        
+                        <option value="Jayamukhi Institute of Technological Sciences, Warangal">Jayamukhi Institute of Technological Sciences, Warangal</option>
+                        
+                        <option value="Jayamukhi Institute of Technological Sciences, Warangal">Jayamukhi Institute of Technological Sciences, Warangal</option>
+                        
+                        <option value="Jaya Prakash Narayan College of Engineering, Mahabubnagar">Jaya Prakash Narayan College of Engineering, Mahabubnagar</option>
+                        
+                        <option value="Jaya Prakash Narayan College of Engineering, Mahabubnagar">Jaya Prakash Narayan College of Engineering, Mahabubnagar</option>
+                        
+                        <option value="Jaypee Institute Of Information Technology, Noida">Jaypee Institute Of Information Technology, Noida</option>
+                        
+                        <option value="Jaypee Institute Of Information Technology, Noida">Jaypee Institute Of Information Technology, Noida</option>
+                        
+                        <option value="Jaypee University Of Engg. &amp; Technology, Guna">Jaypee University Of Engg. &amp; Technology, Guna</option>
+                        
+                        <option value="Jaypee University Of Engg. &amp; Technology, Guna">Jaypee University Of Engg. &amp; Technology, Guna</option>
+                        
+                        <option value="Jaypee University of Information Technology">Jaypee University of Information Technology</option>
+                        
+                        <option value="Jaypee University of Information Technology">Jaypee University of Information Technology</option>
+                        
+                        <option value="J.B. Institute of Engineering and Technology, Yenkapally">J.B. Institute of Engineering and Technology, Yenkapally</option>
+                        
+                        <option value="J.B. Institute of Engineering and Technology, Yenkapally">J.B. Institute of Engineering and Technology, Yenkapally</option>
+                        
+                        <option value="JECRC UDML College Of Engineering, Jaipur">JECRC UDML College Of Engineering, Jaipur</option>
+                        
+                        <option value="JECRC UDML College Of Engineering, Jaipur">JECRC UDML College Of Engineering, Jaipur</option>
+                        
+                        <option value="Jeppiaar Engineering College, Chennai">Jeppiaar Engineering College, Chennai</option>
+                        
+                        <option value="Jeppiaar Engineering College, Chennai">Jeppiaar Engineering College, Chennai</option>
+                        
+                        <option value="Jind Institute of Engineering &amp; Technology, Jind">Jind Institute of Engineering &amp; Technology, Jind</option>
+                        
+                        <option value="Jind Institute of Engineering &amp; Technology, Jind">Jind Institute of Engineering &amp; Technology, Jind</option>
+                        
+                        <option value="J.K. Institute of Applied Physics and Technology, Allahabad">J.K. Institute of Applied Physics and Technology, Allahabad</option>
+                        
+                        <option value="J.K. Institute of Applied Physics and Technology, Allahabad">J.K. Institute of Applied Physics and Technology, Allahabad</option>
+                        
+                        <option value="J.L.Chaturvedi College of Engineering, Nagpur">J.L.Chaturvedi College of Engineering, Nagpur</option>
+                        
+                        <option value="J.L.Chaturvedi College of Engineering, Nagpur">J.L.Chaturvedi College of Engineering, Nagpur</option>
+                        
+                        <option value="JNTUH College of Engineering, Hyderabad">JNTUH College of Engineering, Hyderabad</option>
+                        
+                        <option value="JNTUH College of Engineering, Hyderabad">JNTUH College of Engineering, Hyderabad</option>
+                        
+                        <option value="JNTUH College of Engineering Nachupally, Karimnagar">JNTUH College of Engineering Nachupally, Karimnagar</option>
+                        
+                        <option value="JNTUH College of Engineering Nachupally, Karimnagar">JNTUH College of Engineering Nachupally, Karimnagar</option>
+                        
+                        <option value="JNTU Vizianagaram">JNTU Vizianagaram</option>
+                        
+                        <option value="JNTU Vizianagaram">JNTU Vizianagaram</option>
+                        
+                        <option value="Jodhpur Institute of Engg. &amp; Technology, Jodhpur">Jodhpur Institute of Engg. &amp; Technology, Jodhpur</option>
+                        
+                        <option value="Jodhpur Institute of Engg. &amp; Technology, Jodhpur">Jodhpur Institute of Engg. &amp; Technology, Jodhpur</option>
+                        
+                        <option value="Jodhpur National University, Jodhpur">Jodhpur National University, Jodhpur</option>
+                        
+                        <option value="Jodhpur National University, Jodhpur">Jodhpur National University, Jodhpur</option>
+                        
+                        <option value="JRE Group of Institutions, Greater Noida">JRE Group of Institutions, Greater Noida</option>
+                        
+                        <option value="JRE Group of Institutions, Greater Noida">JRE Group of Institutions, Greater Noida</option>
+                        
+                        <option value="JSS Academy of Technical Education , Lucknow">JSS Academy of Technical Education , Lucknow</option>
+                        
+                        <option value="JSS Academy of Technical Education , Lucknow">JSS Academy of Technical Education , Lucknow</option>
+                        
+                        <option value="Kakinada Institute of Engineering and Technology for Women, Korangi">Kakinada Institute of Engineering and Technology for Women, Korangi</option>
+                        
+                        <option value="Kakinada Institute of Engineering and Technology for Women, Korangi">Kakinada Institute of Engineering and Technology for Women, Korangi</option>
+                        
+                        <option value="Kakinada Institute of Engineering and Technology, Kakinada">Kakinada Institute of Engineering and Technology, Kakinada</option>
+                        
+                        <option value="Kakinada Institute of Engineering and Technology, Kakinada">Kakinada Institute of Engineering and Technology, Kakinada</option>
+                        
+                        <option value="Kakinada Instiute of Engineering and Technology, Korangi">Kakinada Instiute of Engineering and Technology, Korangi</option>
+                        
+                        <option value="Kakinada Instiute of Engineering and Technology, Korangi">Kakinada Instiute of Engineering and Technology, Korangi</option>
+                        
+                        <option value="Kalinga Institute of Industrial Technology, Orissa">Kalinga Institute of Industrial Technology, Orissa</option>
+                        
+                        <option value="Kalinga Institute of Industrial Technology, Orissa">Kalinga Institute of Industrial Technology, Orissa</option>
+                        
+                        <option value="Kalol Institute of Tech. &amp; Research Centre, Kalol">Kalol Institute of Tech. &amp; Research Centre, Kalol</option>
+                        
+                        <option value="Kalol Institute of Tech. &amp; Research Centre, Kalol">Kalol Institute of Tech. &amp; Research Centre, Kalol</option>
+                        
+                        <option value="Kamla Nehru Institute of Technology, Sultanpur">Kamla Nehru Institute of Technology, Sultanpur</option>
+                        
+                        <option value="Kamla Nehru Institute of Technology, Sultanpur">Kamla Nehru Institute of Technology, Sultanpur</option>
+                        
+                        <option value="Karunya University, Coimbatore">Karunya University, Coimbatore</option>
+                        
+                        <option value="Karunya University, Coimbatore">Karunya University, Coimbatore</option>
+                        
+                        <option value="KITE College of Professional Engineering Sciences">KITE College of Professional Engineering Sciences</option>
+                        
+                        <option value="KITE College of Professional Engineering Sciences">KITE College of Professional Engineering Sciences</option>
+                        
+                        <option value="KITE College of Professional Engineering Sciences">KITE College of Professional Engineering Sciences</option>
+                        
+                        <option value="KITE College of Professional Engineering Sciences">KITE College of Professional Engineering Sciences</option>
+                        
+                        <option value="K.L.College of Engineering, Vijayawada">K.L.College of Engineering, Vijayawada</option>
+                        
+                        <option value="K.L.College of Engineering, Vijayawada">K.L.College of Engineering, Vijayawada</option>
+                        
+                        <option value="KMCT College of Engineering, Kozhikode">KMCT College of Engineering, Kozhikode</option>
+                        
+                        <option value="KMCT College of Engineering, Kozhikode">KMCT College of Engineering, Kozhikode</option>
+                        
+                        <option value="Kongunadu College of Engg. and Technology, Trichy">Kongunadu College of Engg. and Technology, Trichy</option>
+                        
+                        <option value="Kongunadu College of Engg. and Technology, Trichy">Kongunadu College of Engg. and Technology, Trichy</option>
+                        
+                        <option value="Krishna Institute Of Technology, Ghaziabad">Krishna Institute Of Technology, Ghaziabad</option>
+                        
+                        <option value="Krishna Institute Of Technology, Ghaziabad">Krishna Institute Of Technology, Ghaziabad</option>
+                        
+                        <option value="Krishna Murthy Institute of Technology and Engineering (KITE), Ghatkesar">Krishna Murthy Institute of Technology and Engineering (KITE), Ghatkesar</option>
+                        
+                        <option value="Krishna Murthy Institute of Technology and Engineering (KITE), Ghatkesar">Krishna Murthy Institute of Technology and Engineering (KITE), Ghatkesar</option>
+                        
+                        <option value="Lakireddy Bali Reddy College Of Engineering, Mylavaram">Lakireddy Bali Reddy College Of Engineering, Mylavaram</option>
+                        
+                        <option value="Lakireddy Bali Reddy College Of Engineering, Mylavaram">Lakireddy Bali Reddy College Of Engineering, Mylavaram</option>
+                        
+                        <option value="Laqshya Institute of Technology and Sciences, Tanikella">Laqshya Institute of Technology and Sciences, Tanikella</option>
+                        
+                        <option value="Laqshya Institute of Technology and Sciences, Tanikella">Laqshya Institute of Technology and Sciences, Tanikella</option>
+                        
+                        <option value="LDRP Institute of Tech. and Research, Gandhinagar">LDRP Institute of Tech. and Research, Gandhinagar</option>
+                        
+                        <option value="LDRP Institute of Tech. and Research, Gandhinagar">LDRP Institute of Tech. and Research, Gandhinagar</option>
+                        
+                        <option value="Lokmanya Tilak College of Engineering, Mumbai">Lokmanya Tilak College of Engineering, Mumbai</option>
+                        
+                        <option value="Lokmanya Tilak College of Engineering, Mumbai">Lokmanya Tilak College of Engineering, Mumbai</option>
+                        
+                        <option value="Lovely Professional University">Lovely Professional University</option>
+                        
+                        <option value="Lovely Professional University">Lovely Professional University</option>
+                        
+                        <option value="Madhav Institute of Technology and Science, Gwalior">Madhav Institute of Technology and Science, Gwalior</option>
+                        
+                        <option value="Madhav Institute of Technology and Science, Gwalior">Madhav Institute of Technology and Science, Gwalior</option>
+                        
+                        <option value="Maharaja Agrasen Institute of Technology, Delhi">Maharaja Agrasen Institute of Technology, Delhi</option>
+                        
+                        <option value="Maharaja Agrasen Institute of Technology, Delhi">Maharaja Agrasen Institute of Technology, Delhi</option>
+                        
+                        <option value="Maharana Pratap College of Technology, Gwalior">Maharana Pratap College of Technology, Gwalior</option>
+                        
+                        <option value="Maharana Pratap College of Technology, Gwalior">Maharana Pratap College of Technology, Gwalior</option>
+                        
+                        <option value="Mahatma Gandhi Institute of Technology, Hyderabad">Mahatma Gandhi Institute of Technology, Hyderabad</option>
+                        
+                        <option value="Mahatma Gandhi Institute of Technology, Hyderabad">Mahatma Gandhi Institute of Technology, Hyderabad</option>
+                        
+                        <option value="Malaviya National Institute of Technology, Jaipur">Malaviya National Institute of Technology, Jaipur</option>
+                        
+                        <option value="Malaviya National Institute of Technology, Jaipur">Malaviya National Institute of Technology, Jaipur</option>
+                        
+                        <option value="Malla Reddy Engineering College, Secunderabad">Malla Reddy Engineering College, Secunderabad</option>
+                        
+                        <option value="Malla Reddy Engineering College, Secunderabad">Malla Reddy Engineering College, Secunderabad</option>
+                        
+                        <option value="Malwa Institute of Technology &amp; Management, Gwalior">Malwa Institute of Technology &amp; Management, Gwalior</option>
+                        
+                        <option value="Malwa Institute of Technology &amp; Management, Gwalior">Malwa Institute of Technology &amp; Management, Gwalior</option>
+                        
+                        <option value="Mangalayatan University, Aligarh">Mangalayatan University, Aligarh</option>
+                        
+                        <option value="Mangalayatan University, Aligarh">Mangalayatan University, Aligarh</option>
+                        
+                        <option value="Maulana Azad National Institute of Technology, Bhopal">Maulana Azad National Institute of Technology, Bhopal</option>
+                        
+                        <option value="Maulana Azad National Institute of Technology, Bhopal">Maulana Azad National Institute of Technology, Bhopal</option>
+                        
+                        <option value="M.B.M.Engineering College, Jodhpur">M.B.M.Engineering College, Jodhpur</option>
+                        
+                        <option value="M.B.M.Engineering College, Jodhpur">M.B.M.Engineering College, Jodhpur</option>
+                        
+                        <option value="MCKV Institute of Engineering, Belur">MCKV Institute of Engineering, Belur</option>
+                        
+                        <option value="MCKV Institute of Engineering, Belur">MCKV Institute of Engineering, Belur</option>
+                        
+                        <option value="Medicaps Institute of Technology &amp; Management, Indore">Medicaps Institute of Technology &amp; Management, Indore</option>
+                        
+                        <option value="Medicaps Institute of Technology &amp; Management, Indore">Medicaps Institute of Technology &amp; Management, Indore</option>
+                        
+                        <option value="Meenakshi College of Engineering, Chennai">Meenakshi College of Engineering, Chennai</option>
+                        
+                        <option value="Meenakshi College of Engineering, Chennai">Meenakshi College of Engineering, Chennai</option>
+                        
+                        <option value="Meerut Institute of Engineering and Technology, Meerut">Meerut Institute of Engineering and Technology, Meerut</option>
+                        
+                        <option value="Meerut Institute of Engineering and Technology, Meerut">Meerut Institute of Engineering and Technology, Meerut</option>
+                        
+                        <option value="Mewar University, Chittorgarh">Mewar University, Chittorgarh</option>
+                        
+                        <option value="Mewar University, Chittorgarh">Mewar University, Chittorgarh</option>
+                        
+                        <option value="MIT College of Engineering, Pune">MIT College of Engineering, Pune</option>
+                        
+                        <option value="MIT College of Engineering, Pune">MIT College of Engineering, Pune</option>
+                        
+                        <option value="MIT Manipal">MIT Manipal</option>
+                        
+                        <option value="MIT Manipal">MIT Manipal</option>
+                        
+                        <option value="M.J.P. Rohilkhand University, Bareilly">M.J.P. Rohilkhand University, Bareilly</option>
+                        
+                        <option value="M.J.P. Rohilkhand University, Bareilly">M.J.P. Rohilkhand University, Bareilly</option>
+                        
+                        <option value="MMM Engineering College, Gorakhpur">MMM Engineering College, Gorakhpur</option>
+                        
+                        <option value="MMM Engineering College, Gorakhpur">MMM Engineering College, Gorakhpur</option>
+                        
+                        <option value="M.N. National Institute of Technology, Allahabad">M.N. National Institute of Technology, Allahabad</option>
+                        
+                        <option value="M.N. National Institute of Technology, Allahabad">M.N. National Institute of Technology, Allahabad</option>
+                        
+                        <option value="Model Engineering College, Kerala">Model Engineering College, Kerala</option>
+                        
+                        <option value="Model Engineering College, Kerala">Model Engineering College, Kerala</option>
+                        
+                        <option value="Mody Institute of Technology &amp; Science, Lakshmangarh">Mody Institute of Technology &amp; Science, Lakshmangarh</option>
+                        
+                        <option value="Mody Institute of Technology &amp; Science, Lakshmangarh">Mody Institute of Technology &amp; Science, Lakshmangarh</option>
+                        
+                        <option value="Moradabad Institute of Technology, Moradabad">Moradabad Institute of Technology, Moradabad</option>
+                        
+                        <option value="Moradabad Institute of Technology, Moradabad">Moradabad Institute of Technology, Moradabad</option>
+                        
+                        <option value="Motihari College of Engineering, Motihari">Motihari College of Engineering, Motihari</option>
+                        
+                        <option value="Motihari College of Engineering, Motihari">Motihari College of Engineering, Motihari</option>
+                        
+                        <option value="Motilal Nehru National Institute of Technology, Allahabad">Motilal Nehru National Institute of Technology, Allahabad</option>
+                        
+                        <option value="Motilal Nehru National Institute of Technology, Allahabad">Motilal Nehru National Institute of Technology, Allahabad</option>
+                        
+                        <option value="M.S. Ramaiah Institute of Technology, Banglore">M.S. Ramaiah Institute of Technology, Banglore</option>
+                        
+                        <option value="M.S. Ramaiah Institute of Technology, Banglore">M.S. Ramaiah Institute of Technology, Banglore</option>
+                        
+                        <option value="Muffakham Jah College of Engineering and Technology, Hyderabad">Muffakham Jah College of Engineering and Technology, Hyderabad</option>
+                        
+                        <option value="Muffakham Jah College of Engineering and Technology, Hyderabad">Muffakham Jah College of Engineering and Technology, Hyderabad</option>
+                        
+                        <option value="Nagpur Institute Of Technalogy, Nagpur">Nagpur Institute Of Technalogy, Nagpur</option>
+                        
+                        <option value="Nagpur Institute Of Technalogy, Nagpur">Nagpur Institute Of Technalogy, Nagpur</option>
+                        
+                        <option value="Narasaraopeta Engineering College">Narasaraopeta Engineering College</option>
+                        
+                        <option value="Narasaraopeta Engineering College">Narasaraopeta Engineering College</option>
+                        
+                        <option value="Narula Institute Of Technology, Kolkata">Narula Institute Of Technology, Kolkata</option>
+                        
+                        <option value="Narula Institute Of Technology, Kolkata">Narula Institute Of Technology, Kolkata</option>
+                        
+                        <option value="National Institute of Technology, Agartala">National Institute of Technology, Agartala</option>
+                        
+                        <option value="National Institute of Technology, Agartala">National Institute of Technology, Agartala</option>
+                        
+                        <option value="National Institute of Technology, Arunachal Pradesh">National Institute of Technology, Arunachal Pradesh</option>
+                        
+                        <option value="National Institute of Technology, Arunachal Pradesh">National Institute of Technology, Arunachal Pradesh</option>
+                        
+                        <option value="National Institute of Technology, Calicut">National Institute of Technology, Calicut</option>
+                        
+                        <option value="National Institute of Technology, Calicut">National Institute of Technology, Calicut</option>
+                        
+                        <option value="National Institute of Technology, Delhi">National Institute of Technology, Delhi</option>
+                        
+                        <option value="National Institute of Technology, Delhi">National Institute of Technology, Delhi</option>
+                        
+                        <option value="National Institute of Technology, Durgapur">National Institute of Technology, Durgapur</option>
+                        
+                        <option value="National Institute of Technology, Durgapur">National Institute of Technology, Durgapur</option>
+                        
+                        <option value="National Institute of Technology, Goa">National Institute of Technology, Goa</option>
+                        
+                        <option value="National Institute of Technology, Goa">National Institute of Technology, Goa</option>
+                        
+                        <option value="National Institute of Technology, Hamirpur">National Institute of Technology, Hamirpur</option>
+                        
+                        <option value="National Institute of Technology, Hamirpur">National Institute of Technology, Hamirpur</option>
+                        
+                        <option value="National Institute of Technology, Jamshedpur">National Institute of Technology, Jamshedpur</option>
+                        
+                        <option value="National Institute of Technology, Jamshedpur">National Institute of Technology, Jamshedpur</option>
+                        
+                        <option value="National Institute of Technology, Karnataka">National Institute of Technology, Karnataka</option>
+                        
+                        <option value="National Institute of Technology, Karnataka">National Institute of Technology, Karnataka</option>
+                        
+                        <option value="National Institute of Technology, Kurukshetra">National Institute of Technology, Kurukshetra</option>
+                        
+                        <option value="National Institute of Technology, Kurukshetra">National Institute of Technology, Kurukshetra</option>
+                        
+                        <option value="National Institute of Technology, Patna">National Institute of Technology, Patna</option>
+                        
+                        <option value="National Institute of Technology, Patna">National Institute of Technology, Patna</option>
+                        
+                        <option value="National Institute of Technology, Puducherry">National Institute of Technology, Puducherry</option>
+                        
+                        <option value="National Institute of Technology, Puducherry">National Institute of Technology, Puducherry</option>
+                        
+                        <option value="National Institute of Technology, Raipur">National Institute of Technology, Raipur</option>
+                        
+                        <option value="National Institute of Technology, Raipur">National Institute of Technology, Raipur</option>
+                        
+                        <option value="National Institute of Technology, Rourkela">National Institute of Technology, Rourkela</option>
+                        
+                        <option value="National Institute of Technology, Rourkela">National Institute of Technology, Rourkela</option>
+                        
+                        <option value="National Institute of Technology, Sikkim">National Institute of Technology, Sikkim</option>
+                        
+                        <option value="National Institute of Technology, Sikkim">National Institute of Technology, Sikkim</option>
+                        
+                        <option value="National Institute of Technology, Silchar">National Institute of Technology, Silchar</option>
+                        
+                        <option value="National Institute of Technology, Silchar">National Institute of Technology, Silchar</option>
+                        
+                        <option value="National Institute of Technology, Surathkal">National Institute of Technology, Surathkal</option>
+                        
+                        <option value="National Institute of Technology, Surathkal">National Institute of Technology, Surathkal</option>
+                        
+                        <option value="National Institute of Technology, Trichy">National Institute of Technology, Trichy</option>
+                        
+                        <option value="National Institute of Technology, Trichy">National Institute of Technology, Trichy</option>
+                        
+                        <option value="National Institute of Technology, Uttarakhand">National Institute of Technology, Uttarakhand</option>
+                        
+                        <option value="National Institute of Technology, Uttarakhand">National Institute of Technology, Uttarakhand</option>
+                        
+                        <option value="National Institute of Technology, Warangal">National Institute of Technology, Warangal</option>
+                        
+                        <option value="National Institute of Technology, Warangal">National Institute of Technology, Warangal</option>
+                        
+                        <option value="N.C College of Engineering, Panipat">N.C College of Engineering, Panipat</option>
+                        
+                        <option value="N.C College of Engineering, Panipat">N.C College of Engineering, Panipat</option>
+                        
+                        <option value="Netaji Subhash Engineering College, Kolkata">Netaji Subhash Engineering College, Kolkata</option>
+                        
+                        <option value="Netaji Subhash Engineering College, Kolkata">Netaji Subhash Engineering College, Kolkata</option>
+                        
+                        <option value="Netaji Subhas Institute of Technology, Delhi">Netaji Subhas Institute of Technology, Delhi</option>
+                        
+                        <option value="Netaji Subhas Institute of Technology, Delhi">Netaji Subhas Institute of Technology, Delhi</option>
+                        
+                        <option value="NIIT University, Neemrana">NIIT University, Neemrana</option>
+                        
+                        <option value="NIIT University, Neemrana">NIIT University, Neemrana</option>
+                        
+                        <option value="Nirma University, Ahmedabad">Nirma University, Ahmedabad</option>
+                        
+                        <option value="Nirma University, Ahmedabad">Nirma University, Ahmedabad</option>
+                        
+                        <option value="NMIMS, Mumbai">NMIMS, Mumbai</option>
+                        
+                        <option value="NMIMS, Mumbai">NMIMS, Mumbai</option>
+                        
+                        <option value="NM Institute of Engineering and Technology, Bhubaneshwar">NM Institute of Engineering and Technology, Bhubaneshwar</option>
+                        
+                        <option value="NM Institute of Engineering and Technology, Bhubaneshwar">NM Institute of Engineering and Technology, Bhubaneshwar</option>
+                        
+                        <option value="Northern India Engineering College, Lucknow">Northern India Engineering College, Lucknow</option>
+                        
+                        <option value="Northern India Engineering College, Lucknow">Northern India Engineering College, Lucknow</option>
+                        
+                        <option value="NRI Institute of Tech &amp; Mgmt, Gwalior">NRI Institute of Tech &amp; Mgmt, Gwalior</option>
+                        
+                        <option value="NRI Institute of Tech &amp; Mgmt, Gwalior">NRI Institute of Tech &amp; Mgmt, Gwalior</option>
+                        
+                        <option value="NSIT, New Delhi">NSIT, New Delhi</option>
+                        
+                        <option value="NSIT, New Delhi">NSIT, New Delhi</option>
+                        
+                        <option value="NYSS Datta Meghe College of Engineering">NYSS Datta Meghe College of Engineering</option>
+                        
+                        <option value="NYSS Datta Meghe College of Engineering">NYSS Datta Meghe College of Engineering</option>
+                        
+                        <option value="Om Shanti Engineering College, Rajkot">Om Shanti Engineering College, Rajkot</option>
+                        
+                        <option value="Om Shanti Engineering College, Rajkot">Om Shanti Engineering College, Rajkot</option>
+                        
+                        <option value="Oriental Institute of Science and Technology, Bhopal">Oriental Institute of Science and Technology, Bhopal</option>
+                        
+                        <option value="Oriental Institute of Science and Technology, Bhopal">Oriental Institute of Science and Technology, Bhopal</option>
+                        
+                        <option value="Oriental Institute of Science and Technology, Indore">Oriental Institute of Science and Technology, Indore</option>
+                        
+                        <option value="Oriental Institute of Science and Technology, Indore">Oriental Institute of Science and Technology, Indore</option>
+                        
+                        <option value="Padmashree Dr. D. Y. Patil Institute of Engineering &amp; Technology, Pimpri">Padmashree Dr. D. Y. Patil Institute of Engineering &amp; Technology, Pimpri</option>
+                        
+                        <option value="Padmashree Dr. D. Y. Patil Institute of Engineering &amp; Technology, Pimpri">Padmashree Dr. D. Y. Patil Institute of Engineering &amp; Technology, Pimpri</option>
+                        
+                        <option value="PDEA College of Engineering, Pune">PDEA College of Engineering, Pune</option>
+                        
+                        <option value="PDEA College of Engineering, Pune">PDEA College of Engineering, Pune</option>
+                        
+                        <option value="PES Institute of Technology, Bangalore">PES Institute of Technology, Bangalore</option>
+                        
+                        <option value="PES Institute of Technology, Bangalore">PES Institute of Technology, Bangalore</option>
+                        
+                        <option value="Poornima College of Engineering, Jaipur">Poornima College of Engineering, Jaipur</option>
+                        
+                        <option value="Poornima College of Engineering, Jaipur">Poornima College of Engineering, Jaipur</option>
+                        
+                        <option value="Pragati Engineering College, Surampalem">Pragati Engineering College, Surampalem</option>
+                        
+                        <option value="Pragati Engineering College, Surampalem">Pragati Engineering College, Surampalem</option>
+                        
+                        <option value="Prasad V. Potluri Siddhartha Institute of Technology, Vijayawada">Prasad V. Potluri Siddhartha Institute of Technology, Vijayawada</option>
+                        
+                        <option value="Prasad V. Potluri Siddhartha Institute of Technology, Vijayawada">Prasad V. Potluri Siddhartha Institute of Technology, Vijayawada</option>
+                        
+                        <option value="PSG Engineering College, Coimbatore">PSG Engineering College, Coimbatore</option>
+                        
+                        <option value="PSG Engineering College, Coimbatore">PSG Engineering College, Coimbatore</option>
+                        
+                        <option value="Punjab Engineering College, Chandigarh">Punjab Engineering College, Chandigarh</option>
+                        
+                        <option value="Punjab Engineering College, Chandigarh">Punjab Engineering College, Chandigarh</option>
+                        
+                        <option value="PVPS Institute of Technology, Kanuru">PVPS Institute of Technology, Kanuru</option>
+                        
+                        <option value="PVPS Institute of Technology, Kanuru">PVPS Institute of Technology, Kanuru</option>
+                        
+                        <option value="P.V.P.S. Institute Of Technology, Vijayawada">P.V.P.S. Institute Of Technology, Vijayawada</option>
+                        
+                        <option value="P.V.P.S. Institute Of Technology, Vijayawada">P.V.P.S. Institute Of Technology, Vijayawada</option>
+                        
+                        <option value="Raghu Engineering College, Visakhapatnam">Raghu Engineering College, Visakhapatnam</option>
+                        
+                        <option value="Raghu Engineering College, Visakhapatnam">Raghu Engineering College, Visakhapatnam</option>
+                        
+                        <option value="Rajalakshmi Engineering College">Rajalakshmi Engineering College</option>
+                        
+                        <option value="Rajalakshmi Engineering College">Rajalakshmi Engineering College</option>
+                        
+                        <option value="Raj Kumar Goel Institute of Technology, Ghaziabad">Raj Kumar Goel Institute of Technology, Ghaziabad</option>
+                        
+                        <option value="Raj Kumar Goel Institute of Technology, Ghaziabad">Raj Kumar Goel Institute of Technology, Ghaziabad</option>
+                        
+                        <option value="Ramdeobaba Kamla Nehru Engineering College, Nagpur">Ramdeobaba Kamla Nehru Engineering College, Nagpur</option>
+                        
+                        <option value="Ramdeobaba Kamla Nehru Engineering College, Nagpur">Ramdeobaba Kamla Nehru Engineering College, Nagpur</option>
+                        
+                        <option value="Rayat &amp; Bahra College of Engineering &amp; Bio-Technology for Women">Rayat &amp; Bahra College of Engineering &amp; Bio-Technology for Women</option>
+                        
+                        <option value="Rayat &amp; Bahra College of Engineering &amp; Bio-Technology for Women">Rayat &amp; Bahra College of Engineering &amp; Bio-Technology for Women</option>
+                        
+                        <option value="RCC Institute of information Technology, Kolkata">RCC Institute of information Technology, Kolkata</option>
+                        
+                        <option value="RCC Institute of information Technology, Kolkata">RCC Institute of information Technology, Kolkata</option>
+                        
+                        <option value="Revera Institute of Technology, Mumbai">Revera Institute of Technology, Mumbai</option>
+                        
+                        <option value="Revera Institute of Technology, Mumbai">Revera Institute of Technology, Mumbai</option>
+                        
+                        <option value="RGU-IIIT, Basar">RGU-IIIT, Basar</option>
+                        
+                        <option value="RGU-IIIT, Basar">RGU-IIIT, Basar</option>
+                        
+                        <option value="RGU-IIIT, Nuzvid">RGU-IIIT, Nuzvid</option>
+                        
+                        <option value="RGU-IIIT, Nuzvid">RGU-IIIT, Nuzvid</option>
+                        
+                        <option value="RGU-IIIT RK Valley">RGU-IIIT RK Valley</option>
+                        
+                        <option value="RGU-IIIT RK Valley">RGU-IIIT RK Valley</option>
+                        
+                        <option value="Rustamji Institute of Technology, Tekanpur">Rustamji Institute of Technology, Tekanpur</option>
+                        
+                        <option value="Rustamji Institute of Technology, Tekanpur">Rustamji Institute of Technology, Tekanpur</option>
+                        
+                        <option value="RVR &amp; JC College of Engineering, Guntur">RVR &amp; JC College of Engineering, Guntur</option>
+                        
+                        <option value="RVR &amp; JC College of Engineering, Guntur">RVR &amp; JC College of Engineering, Guntur</option>
+                        
+                        <option value="Sagi Rama Krishnam Raju Engg College, Bhimavaram">Sagi Rama Krishnam Raju Engg College, Bhimavaram</option>
+                        
+                        <option value="Sagi Rama Krishnam Raju Engg College, Bhimavaram">Sagi Rama Krishnam Raju Engg College, Bhimavaram</option>
+                        
+                        <option value="Sandip Foundations SITRC, Nasik">Sandip Foundations SITRC, Nasik</option>
+                        
+                        <option value="Sandip Foundations SITRC, Nasik">Sandip Foundations SITRC, Nasik</option>
+                        
+                        <option value="Sardar Vallabhbhai National Institute of Technology, Surat">Sardar Vallabhbhai National Institute of Technology, Surat</option>
+                        
+                        <option value="Sardar Vallabhbhai National Institute of Technology, Surat">Sardar Vallabhbhai National Institute of Technology, Surat</option>
+                        
+                        <option value="SASTRA University, Tamilnadu">SASTRA University, Tamilnadu</option>
+                        
+                        <option value="SASTRA University, Tamilnadu">SASTRA University, Tamilnadu</option>
+                        
+                        <option value="School of Engineering, Cochin University of Science and Technology">School of Engineering, Cochin University of Science and Technology</option>
+                        
+                        <option value="School of Engineering, Cochin University of Science and Technology">School of Engineering, Cochin University of Science and Technology</option>
+                        
+                        <option value="S.D. College of engineering and Technology, Muzaffarnagar">S.D. College of engineering and Technology, Muzaffarnagar</option>
+                        
+                        <option value="S.D. College of engineering and Technology, Muzaffarnagar">S.D. College of engineering and Technology, Muzaffarnagar</option>
+                        
+                        <option value="Seth Jai Prakash MukundLal Institute of Technology">Seth Jai Prakash MukundLal Institute of Technology</option>
+                        
+                        <option value="Seth Jai Prakash MukundLal Institute of Technology">Seth Jai Prakash MukundLal Institute of Technology</option>
+                        
+                        <option value="SGGS Institute Of Eng. &amp; Tech., Nanded">SGGS Institute Of Eng. &amp; Tech., Nanded</option>
+                        
+                        <option value="SGGS Institute Of Eng. &amp; Tech., Nanded">SGGS Institute Of Eng. &amp; Tech., Nanded</option>
+                        
+                        <option value="SGSITS, Indore">SGSITS, Indore</option>
+                        
+                        <option value="SGSITS, Indore">SGSITS, Indore</option>
+                        
+                        <option value="SHEAT College, Lucknow">SHEAT College, Lucknow</option>
+                        
+                        <option value="SHEAT College, Lucknow">SHEAT College, Lucknow</option>
+                        
+                        <option value="Shree Ganpati Institute of Technology, Ghaziabad">Shree Ganpati Institute of Technology, Ghaziabad</option>
+                        
+                        <option value="Shree Ganpati Institute of Technology, Ghaziabad">Shree Ganpati Institute of Technology, Ghaziabad</option>
+                        
+                        <option value="Shri Mata Vaishno Devi University, Katra">Shri Mata Vaishno Devi University, Katra</option>
+                        
+                        <option value="Shri Mata Vaishno Devi University, Katra">Shri Mata Vaishno Devi University, Katra</option>
+                        
+                        <option value="Shri Vaishnav Institute of Technology and Science (SVITS), Indore">Shri Vaishnav Institute of Technology and Science (SVITS), Indore</option>
+                        
+                        <option value="Shri Vaishnav Institute of Technology and Science (SVITS), Indore">Shri Vaishnav Institute of Technology and Science (SVITS), Indore</option>
+                        
+                        <option value="Shri Vishnu Engineering College for Women, Bhimavaram">Shri Vishnu Engineering College for Women, Bhimavaram</option>
+                        
+                        <option value="Shri Vishnu Engineering College for Women, Bhimavaram">Shri Vishnu Engineering College for Women, Bhimavaram</option>
+                        
+                        <option value="Siddaganga Institute of Technology, Tumkur">Siddaganga Institute of Technology, Tumkur</option>
+                        
+                        <option value="Siddaganga Institute of Technology, Tumkur">Siddaganga Institute of Technology, Tumkur</option>
+                        
+                        <option value="SIET, Allahabad">SIET, Allahabad</option>
+                        
+                        <option value="SIET, Allahabad">SIET, Allahabad</option>
+                        
+                        <option value="Sikkim Manipal Institute of Technology, Rangpo">Sikkim Manipal Institute of Technology, Rangpo</option>
+                        
+                        <option value="Sikkim Manipal Institute of Technology, Rangpo">Sikkim Manipal Institute of Technology, Rangpo</option>
+                        
+                        <option value="Silicon Institute of Technology, Bhubaneswar">Silicon Institute of Technology, Bhubaneswar</option>
+                        
+                        <option value="Silicon Institute of Technology, Bhubaneswar">Silicon Institute of Technology, Bhubaneswar</option>
+                        
+                        <option value="Singhania University, Rajasthan">Singhania University, Rajasthan</option>
+                        
+                        <option value="Singhania University, Rajasthan">Singhania University, Rajasthan</option>
+                        
+                        <option value="Sinhgad Academy of Engineering, Kondhwa">Sinhgad Academy of Engineering, Kondhwa</option>
+                        
+                        <option value="Sinhgad Academy of Engineering, Kondhwa">Sinhgad Academy of Engineering, Kondhwa</option>
+                        
+                        <option value="Sir Chhotu Ram Institute of Engineering and Technology, Meerut">Sir Chhotu Ram Institute of Engineering and Technology, Meerut</option>
+                        
+                        <option value="Sir Chhotu Ram Institute of Engineering and Technology, Meerut">Sir Chhotu Ram Institute of Engineering and Technology, Meerut</option>
+                        
+                        <option value="Sir Padampat Singhania University. Udaipur">Sir Padampat Singhania University. Udaipur</option>
+                        
+                        <option value="Sir Padampat Singhania University. Udaipur">Sir Padampat Singhania University. Udaipur</option>
+                        
+                        <option value="SK Somaiya, Mumbai">SK Somaiya, Mumbai</option>
+                        
+                        <option value="SK Somaiya, Mumbai">SK Somaiya, Mumbai</option>
+                        
+                        <option value="SLCIET, Hyderabad">SLCIET, Hyderabad</option>
+                        
+                        <option value="SLCIET, Hyderabad">SLCIET, Hyderabad</option>
+                        
+                        <option value="SNS College of Technology, Coimbatore">SNS College of Technology, Coimbatore</option>
+                        
+                        <option value="SNS College of Technology, Coimbatore">SNS College of Technology, Coimbatore</option>
+                        
+                        <option value="Sona College of Technology, Tamilnadu">Sona College of Technology, Tamilnadu</option>
+                        
+                        <option value="Sona College of Technology, Tamilnadu">Sona College of Technology, Tamilnadu</option>
+                        
+                        <option value="Sree Kavitha Engineering College, Karepally">Sree Kavitha Engineering College, Karepally</option>
+                        
+                        <option value="Sree Kavitha Engineering College, Karepally">Sree Kavitha Engineering College, Karepally</option>
+                        
+                        <option value="Sreenidhi Institute of Science and Technology, Hyderabad">Sreenidhi Institute of Science and Technology, Hyderabad</option>
+                        
+                        <option value="Sreenidhi Institute of Science and Technology, Hyderabad">Sreenidhi Institute of Science and Technology, Hyderabad</option>
+                        
+                        <option value="Sri Indu College of Engg. &amp; Technology, Sheriguda">Sri Indu College of Engg. &amp; Technology, Sheriguda</option>
+                        
+                        <option value="Sri Indu College of Engg. &amp; Technology, Sheriguda">Sri Indu College of Engg. &amp; Technology, Sheriguda</option>
+                        
+                        <option value="Sri Jayachamarajendra College of Engineering, Mysore">Sri Jayachamarajendra College of Engineering, Mysore</option>
+                        
+                        <option value="Sri Jayachamarajendra College of Engineering, Mysore">Sri Jayachamarajendra College of Engineering, Mysore</option>
+                        
+                        <option value="Sri Ramswaroop Memorial College of Engineering and Management, Lucknow">Sri Ramswaroop Memorial College of Engineering and Management, Lucknow</option>
+                        
+                        <option value="Sri Ramswaroop Memorial College of Engineering and Management, Lucknow">Sri Ramswaroop Memorial College of Engineering and Management, Lucknow</option>
+                        
+                        <option value="Sri Venkateswara College of Engineering, Chennai">Sri Venkateswara College of Engineering, Chennai</option>
+                        
+                        <option value="Sri Venkateswara College of Engineering, Chennai">Sri Venkateswara College of Engineering, Chennai</option>
+                        
+                        <option value="SRMS Womens College of Engg. &amp; Technology,Bareilly">SRMS Womens College of Engg. &amp; Technology,Bareilly</option>
+                        
+                        <option value="SRMS Womens College of Engg. &amp; Technology,Bareilly">SRMS Womens College of Engg. &amp; Technology,Bareilly</option>
+                        
+                        <option value="SRM University, Chennai">SRM University, Chennai</option>
+                        
+                        <option value="SRM University, Chennai">SRM University, Chennai</option>
+                        
+                        <option value="SRM University, NCR Campus, Ghaziabad">SRM University, NCR Campus, Ghaziabad</option>
+                        
+                        <option value="SRM University, NCR Campus, Ghaziabad">SRM University, NCR Campus, Ghaziabad</option>
+                        
+                        <option value="S.S. College of Engg. &amp; Technology, Bhilai">S.S. College of Engg. &amp; Technology, Bhilai</option>
+                        
+                        <option value="S.S. College of Engg. &amp; Technology, Bhilai">S.S. College of Engg. &amp; Technology, Bhilai</option>
+                        
+                        <option value="SSGPURC, Punjab">SSGPURC, Punjab</option>
+                        
+                        <option value="SSGPURC, Punjab">SSGPURC, Punjab</option>
+                        
+                        <option value="SS Institute of Technology, Hyderabad">SS Institute of Technology, Hyderabad</option>
+                        
+                        <option value="SS Institute of Technology, Hyderabad">SS Institute of Technology, Hyderabad</option>
+                        
+                        <option value="SSN College of Engineering">SSN College of Engineering</option>
+                        
+                        <option value="SSN College of Engineering">SSN College of Engineering</option>
+                        
+                        <option value="Stanley College of Engineering and Technology for Women, Hyderabad">Stanley College of Engineering and Technology for Women, Hyderabad</option>
+                        
+                        <option value="Stanley College of Engineering and Technology for Women, Hyderabad">Stanley College of Engineering and Technology for Women, Hyderabad</option>
+                        
+                        <option value="SV Engineering College for Women, Tirupati">SV Engineering College for Women, Tirupati</option>
+                        
+                        <option value="SV Engineering College for Women, Tirupati">SV Engineering College for Women, Tirupati</option>
+                        
+                        <option value="S.V.S. College of Engineering, Coimbatore">S.V.S. College of Engineering, Coimbatore</option>
+                        
+                        <option value="S.V.S. College of Engineering, Coimbatore">S.V.S. College of Engineering, Coimbatore</option>
+                        
+                        <option value="Swami Keshvanand Institute Of Technology, Jaipur">Swami Keshvanand Institute Of Technology, Jaipur</option>
+                        
+                        <option value="Swami Keshvanand Institute Of Technology, Jaipur">Swami Keshvanand Institute Of Technology, Jaipur</option>
+                        
+                        <option value="Tagore Engineering College, Chennai">Tagore Engineering College, Chennai</option>
+                        
+                        <option value="Tagore Engineering College, Chennai">Tagore Engineering College, Chennai</option>
+                        
+                        <option value="Techno India College of Technology, Kolkata">Techno India College of Technology, Kolkata</option>
+                        
+                        <option value="Techno India College of Technology, Kolkata">Techno India College of Technology, Kolkata</option>
+                        
+                        <option value="Techno India NJR Institute of Technology, Udaipur">Techno India NJR Institute of Technology, Udaipur</option>
+                        
+                        <option value="Techno India NJR Institute of Technology, Udaipur">Techno India NJR Institute of Technology, Udaipur</option>
+                        
+                        <option value="Thapar Institute of Engg. and Technology, Patiala">Thapar Institute of Engg. and Technology, Patiala</option>
+                        
+                        <option value="Thapar Institute of Engg. and Technology, Patiala">Thapar Institute of Engg. and Technology, Patiala</option>
+                        
+                        <option value="The LNM Institute of Information Technology, Jaipur">The LNM Institute of Information Technology, Jaipur</option>
+                        
+                        <option value="The LNM Institute of Information Technology, Jaipur">The LNM Institute of Information Technology, Jaipur</option>
+                        
+                        <option value="TIT Group of Institutions, Bhopal">TIT Group of Institutions, Bhopal</option>
+                        
+                        <option value="TIT Group of Institutions, Bhopal">TIT Group of Institutions, Bhopal</option>
+                        
+                        <option value="TRR Polytechnic Collage, Hyderabad">TRR Polytechnic Collage, Hyderabad</option>
+                        
+                        <option value="TRR Polytechnic Collage, Hyderabad">TRR Polytechnic Collage, Hyderabad</option>
+                        
+                        <option value="Truba College of Engg. And Technology, Indore">Truba College of Engg. And Technology, Indore</option>
+                        
+                        <option value="Truba College of Engg. And Technology, Indore">Truba College of Engg. And Technology, Indore</option>
+                        
+                        <option value="Turbomachinery Institute of Technology and Science, Secunderabad">Turbomachinery Institute of Technology and Science, Secunderabad</option>
+                        
+                        <option value="Turbomachinery Institute of Technology and Science, Secunderabad">Turbomachinery Institute of Technology and Science, Secunderabad</option>
+                        
+                        <option value="UIET CSJM University">UIET CSJM University</option>
+                        
+                        <option value="UIET CSJM University">UIET CSJM University</option>
+                        
+                        <option value="UIET- Panjab University">UIET- Panjab University</option>
+                        
+                        <option value="UIET- Panjab University">UIET- Panjab University</option>
+                        
+                        <option value="United College of Engineering, Noida">United College of Engineering, Noida</option>
+                        
+                        <option value="United College of Engineering, Noida">United College of Engineering, Noida</option>
+                        
+                        <option value="United College of Engineering &amp; Research, Allahabad">United College of Engineering &amp; Research, Allahabad</option>
+                        
+                        <option value="United College of Engineering &amp; Research, Allahabad">United College of Engineering &amp; Research, Allahabad</option>
+                        
+                        <option value="University College of Engineering, Kota">University College of Engineering, Kota</option>
+                        
+                        <option value="University College of Engineering, Kota">University College of Engineering, Kota</option>
+                        
+                        <option value="University Institute of Engg. &amp; Tech., Kurukshetra">University Institute of Engg. &amp; Tech., Kurukshetra</option>
+                        
+                        <option value="University Institute of Engg. &amp; Tech., Kurukshetra">University Institute of Engg. &amp; Tech., Kurukshetra</option>
+                        
+                        <option value="University of Kalyani, Kalyani">University of Kalyani, Kalyani</option>
+                        
+                        <option value="University of Kalyani, Kalyani">University of Kalyani, Kalyani</option>
+                        
+                        <option value="University of Toronto">University of Toronto</option>
+                        
+                        <option value="University of Toronto">University of Toronto</option>
+                        
+                        <option value="Vaagdevi Institute of Technology and Science">Vaagdevi Institute of Technology and Science</option>
+                        
+                        <option value="Vaagdevi Institute of Technology and Science">Vaagdevi Institute of Technology and Science</option>
+                        
+                        <option value="Vardhaman College of Engineering, Kacharam">Vardhaman College of Engineering, Kacharam</option>
+                        
+                        <option value="Vardhaman College of Engineering, Kacharam">Vardhaman College of Engineering, Kacharam</option>
+                        
+                        <option value="Vasavi College of Engineering, Ibrahimbagh">Vasavi College of Engineering, Ibrahimbagh</option>
+                        
+                        <option value="Vasavi College of Engineering, Ibrahimbagh">Vasavi College of Engineering, Ibrahimbagh</option>
+                        
+                        <option value="Veer Surendra Sai University of Technology, Sambalpur">Veer Surendra Sai University of Technology, Sambalpur</option>
+                        
+                        <option value="Veer Surendra Sai University of Technology, Sambalpur">Veer Surendra Sai University of Technology, Sambalpur</option>
+                        
+                        <option value="Vellore Institute of Technology, Vellore">Vellore Institute of Technology, Vellore</option>
+                        
+                        <option value="Vellore Institute of Technology, Vellore">Vellore Institute of Technology, Vellore</option>
+                        
+                        <option value="Vidyalankar Institute of Technology, Mumbai">Vidyalankar Institute of Technology, Mumbai</option>
+                        
+                        <option value="Vidyalankar Institute of Technology, Mumbai">Vidyalankar Institute of Technology, Mumbai</option>
+                        
+                        <option value="Vignana Bharathi Institute of Technology, Hyderabad">Vignana Bharathi Institute of Technology, Hyderabad</option>
+                        
+                        <option value="Vignana Bharathi Institute of Technology, Hyderabad">Vignana Bharathi Institute of Technology, Hyderabad</option>
+                        
+                        <option value="Vignan Institute of Tech. &amp; Aero. Engineering">Vignan Institute of Tech. &amp; Aero. Engineering</option>
+                        
+                        <option value="Vignan Institute of Tech. &amp; Aero. Engineering">Vignan Institute of Tech. &amp; Aero. Engineering</option>
+                        
+                        <option value="Vignan Institute of Technology &amp; Sci., Deshmukhi">Vignan Institute of Technology &amp; Sci., Deshmukhi</option>
+                        
+                        <option value="Vignan Institute of Technology &amp; Sci., Deshmukhi">Vignan Institute of Technology &amp; Sci., Deshmukhi</option>
+                        
+                        <option value="Vignans Engineering College, Guntur">Vignans Engineering College, Guntur</option>
+                        
+                        <option value="Vignans Engineering College, Guntur">Vignans Engineering College, Guntur</option>
+                        
+                        <option value="Vignan University">Vignan University</option>
+                        
+                        <option value="Vignan University">Vignan University</option>
+                        
+                        <option value="Vishwakarma Institute of Information Technology, Pune">Vishwakarma Institute of Information Technology, Pune</option>
+                        
+                        <option value="Vishwakarma Institute of Information Technology, Pune">Vishwakarma Institute of Information Technology, Pune</option>
+                        
+                        <option value="Visvesvaraya National Institute of Technology, Nagpur">Visvesvaraya National Institute of Technology, Nagpur</option>
+                        
+                        <option value="Visvesvaraya National Institute of Technology, Nagpur">Visvesvaraya National Institute of Technology, Nagpur</option>
+                        
+                        <option value="VIT University, Chennai">VIT University, Chennai</option>
+                        
+                        <option value="VIT University, Chennai">VIT University, Chennai</option>
+                        
+                        <option value="Vivekanand Education Society Institute of Technology, Mumbai">Vivekanand Education Society Institute of Technology, Mumbai</option>
+                        
+                        <option value="Vivekanand Education Society Institute of Technology, Mumbai">Vivekanand Education Society Institute of Technology, Mumbai</option>
+                        
+                        <option value="VJTI, Mumbai">VJTI, Mumbai</option>
+                        
+                        <option value="VJTI, Mumbai">VJTI, Mumbai</option>
+                        
+                        <option value="VMR Institute of Tech. &amp; Mgmt Science, Hyderabad">VMR Institute of Tech. &amp; Mgmt Science, Hyderabad</option>
+                        
+                        <option value="VMR Institute of Tech. &amp; Mgmt Science, Hyderabad">VMR Institute of Tech. &amp; Mgmt Science, Hyderabad</option>
+                        
+                        <option value="VNR Vignana Jyothi Institute of Engineering &amp; Technology, Hyderabad">VNR Vignana Jyothi Institute of Engineering &amp; Technology, Hyderabad</option>
+                        
+                        <option value="VNR Vignana Jyothi Institute of Engineering &amp; Technology, Hyderabad">VNR Vignana Jyothi Institute of Engineering &amp; Technology, Hyderabad</option>
+                        
+                        <option value="VPCOE Baramati, Pune">VPCOE Baramati, Pune</option>
+                        
+                        <option value="VPCOE Baramati, Pune">VPCOE Baramati, Pune</option>
+                        
+                        <option value="VR Siddhartha Engineering College, Vijayawada">VR Siddhartha Engineering College, Vijayawada</option>
+                        
+                        <option value="VR Siddhartha Engineering College, Vijayawada">VR Siddhartha Engineering College, Vijayawada</option>
+                        
+                        <option value="VSM College of Engineering, Ramachandrapuram">VSM College of Engineering, Ramachandrapuram</option>
+                        
+                        <option value="VSM College of Engineering, Ramachandrapuram">VSM College of Engineering, Ramachandrapuram</option>
+                        
+                        <option value="Vyas Engineering College for Girls, Jodhpur">Vyas Engineering College for Girls, Jodhpur</option>
+                        
+                        <option value="Vyas Engineering College for Girls, Jodhpur">Vyas Engineering College for Girls, Jodhpur</option>
+                        
+                        <option value="Xavier Institute of Engineering, Mahim">Xavier Institute of Engineering, Mahim</option>
+                        
+                        <option value="Xavier Institute of Engineering, Mahim">Xavier Institute of Engineering, Mahim</option>
+                        
+                        <option value="Yeshwantrao Chavan College of Engineering">Yeshwantrao Chavan College of Engineering</option>
+                        
+                        <option value="Yeshwantrao Chavan College of Engineering">Yeshwantrao Chavan College of Engineering</option>
+                        
+                        <option value="ZHCET, AMU(Aligarh)">ZHCET, AMU(Aligarh)</option>
+                        
+                        <option value="ZHCET, AMU(Aligarh)">ZHCET, AMU(Aligarh)</option>
+                        
+                        <option value="other">Other</option>
+                    </select>
+                    <p id="ecollegename" style="display:none">Please select any college.</p><br>
+                    <label for="other" id="otherlabel" style="display: none;">Other College : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input type="text" name="other" id="other" style="display: none;" maxlength="50" class="tipTip">
+                    
+                    
+                    <p id="Euniversity" style="display: none">should be at least 5 character (at most 70 character) with Characters .-</p>
+                    
+                    
+
+                    <p id="Euniversity" style="display: none">should be  least 5 character (at most 70 character)  </p>
+                    <br>
+
+
+                    <label for="period">Address : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <textarea id="collegeaddress" name="collegeaddress" rows="5" cols="3" tabindex="87" class="tipTip" -"=""></textarea>
+                    <p id="Ecollegeaddress" style="display: none"> should be at least 10 character long (at most 150) with alphabets, digits and () , . : " - </p>
+                   
+                    
+                    <br>
+
+                    <label for="city"> City : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input type="text" tabindex="88" maxlength="15" name="collegecityname" value="" class="tipTip">
+                    <p id="Ecollegecityname" style="display: none">should be at least 1 character (at most 15 character)</p>
+                    
+                    
+                    <br>
+
+                    <label for="state"> State : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+
+                    <select name="collegestatename" id="collegestate" tabindex="89">
+                        <option class="epara" value="0" selected="true"> - Select State -</option>
+                        
+                        <option value="ANDAMAN AND NICOBAR ISLANDS">ANDAMAN AND NICOBAR ISLANDS</option>
+                        
+                        <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                        
+                        <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                        
+                        <option value="ASSAM">ASSAM</option>
+                        
+                        <option value="BIHAR">BIHAR</option>
+                        
+                        <option value="CHANDIGARH">CHANDIGARH</option>
+                        
+                        <option value="CHHATISGARH">CHHATISGARH</option>
+                        
+                        <option value="DADRA NAGAR HAVELI">DADRA NAGAR HAVELI</option>
+                        
+                        <option value="DAMAN DIU">DAMAN DIU</option>
+                        
+                        <option value="DELHI">DELHI</option>
+                        
+                        <option value="GOA">GOA</option>
+                        
+                        <option value="GUJARAT">GUJARAT</option>
+                        
+                        <option value="HARYANA">HARYANA</option>
+                        
+                        <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                        
+                        <option value="JAMMU &amp; KASHMIR">JAMMU &amp; KASHMIR</option>
+                        
+                        <option value="JHARKHAND">JHARKHAND</option>
+                        
+                        <option value="KARNATAKA">KARNATAKA</option>
+                        
+                        <option value="KERALA">KERALA</option>
+                        
+                        <option value="LAKSHADWEEP">LAKSHADWEEP</option>
+                        
+                        <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                        
+                        <option value="MAHARASHTRA">MAHARASHTRA</option>
+                        
+                        <option value="MANIPUR">MANIPUR</option>
+                        
+                        <option value="MEGHALAYA">MEGHALAYA</option>
+                        
+                        <option value="MIZORAM">MIZORAM</option>
+                        
+                        <option value="NAGALAND">NAGALAND</option>
+                        
+                        <option value="ORISSA">ORISSA</option>
+                        
+                        <option value="PONDICHERRY">PONDICHERRY</option>
+                        
+                        <option value="PUNJAB">PUNJAB</option>
+                        
+                        <option value="RAJASTHAN">RAJASTHAN</option>
+                        
+                        <option value="SIKKIM">SIKKIM</option>
+                        
+                        <option value="TAMIL NADU">TAMIL NADU</option>
+                        
+                        <option value="TRIPURA">TRIPURA</option>
+                        
+                        <option value="UTTARANCHAL">UTTARANCHAL</option>
+                        
+                        <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                        
+                        <option value="WEST BENGAL">WEST BENGAL</option>
+                        
+                    </select>
+                    <p id="Ecollegestatename" style="display: none">Please select State</p>
+                    
+                    <br>
+
+                    <label for="pincode"> Pincode : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="collegepincode" id="collegepincode" type="text" tabindex="90" maxlength="6" value="" class="tipTip">
+                    <p id="Ecollegepincode" style="display: none">should be 6 digits</p>
+                    
+                    
+                    <br>
+                    <label for="name">Principal's Name : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="pricipalname" id="uemail" type="text" tabindex="91" maxlength="30" value="" class="tipTip">
+                    <p id="Epricipalname" style="display: none">should be at least 1 character (at most 30 character) with period(.), can't use consecutive periods &amp; should start with character</p>
+                    
+                    
+                    <br>
+                    <label for="name">Principal's Email : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="principalemail" id="uemail" type="text" tabindex="92" maxlength="50" value="" class="tipTip">
+                    <p id="Eprincipalemail" style="display: none">should be valid email </p>
+                    
+
+                    <br>
+                    <label for="name">HoD's Name : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="hodname" id="uemail" type="text" tabindex="93" maxlength="30" value="" class="tipTip">
+                    <p id="Ehodname" style="display: none">should be at least 1 character (at most 30 character) with period(.), can't use consecutive periods &amp; should start with character</p>
+                    
+                    
+                    <br>
+                    <label for="name">HoD's Email : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="hodemail" id="uemail" type="text" tabindex="94" maxlength="50" value="" class="tipTip">
+                    <p id="Ehodemail" style="display: none">should be valid email    </p>
+                  
+                    
+                    <br>
+                    <label for="email">College URL : <em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em> </label>
+                    <input name="url" id="url" type="text" tabindex="95" maxlength="50" value="" class="tipTip">
+                    <p id="Eurl" style="display: none">provide valid College URL , may contain characters and / - : _ .   </p>
+
+                    
+
+
+
+                </fieldset>
+                <fieldset>
+                    <table class="captchatable">
+                        <tbody><tr class="captchatr">
+                            <td>Type the code shown :<em><img src="./Summer Internship-2015 Registration Page_files/140.gif" alt="required"></em></td>
+                            <td><input type="text" tabindex="96" name="userinput" styleclass="formfields" maxlength="10" size="10"></td>
+                            <td></td>
+                        </tr>
+                        <tr class="captchatr">
+                            <td><p id="Ecaptcha" style="display: none">enter the text from Image   </p>
+                                </td>
+                            <td> <img src="./Summer Internship-2015 Registration Page_files/Captcha.jsp"><br>Letters are case sensitive.  <input type="hidden" name="captchaText" maxlength="10"></td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody></table>
+
+                </fieldset>
+
+                <fieldset id="declaration">
+                    <legend>Declaration</legend>
+                    <div> By clicking on below Submit Button, I certify  that the information given above is correct and I am aware that providing incorrect information in the application form, will result in  cancellation of selection.</div>
+                    <div> If I accept the Summer Internship , I undertake to abide by rules and regulations of the Indian Institute of Technology. </div> <br>
+                    <input type="hidden" name="path" value="null">
+                </fieldset>
+
+                
+                <p>
+                    <input tabindex="99" name="submit" type="submit" value="Submit">
+                    <input tabindex="100" type="reset">
+                </p>
+                
+            </form>
+        </div>
+        
+    
+
+<div id="tiptip_holder" style="max-width: 200px; margin: 336px 0px 0px 699px; display: none;" class="tip_right"><div id="tiptip_arrow" style="margin-left: -12px; margin-top: 20px;"><div id="tiptip_arrow_inner"></div></div><div id="tiptip_content">Should be at least 10 character long (at most 150) with alphabets, digits and (): _  - \</div></div><script type="text/javascript" async="" src="./Summer Internship-2015 Registration Page_files/7fb5faa8637345d685.js"></script><iframe style="display: none; position: fixed; top: 50%; left: 50%; width: 650px; height: 500px; margin-top: -250px; margin-left: -325px; z-index: 2147483647;" id="__twbopt7fb5faa8637345d685" frameborder="0" scrolling="no"></iframe><div id="tcal" style="left: 469px; top: 672px; visibility: hidden;"><table class="ctrl"><tbody><tr><td onclick="A_TCALS[&#39;0&#39;].f_update(791015400000)" title="Previous Year"><img src="./Summer Internship-2015 Registration Page_files/prev_year.gif"></td><td onclick="A_TCALS[&#39;0&#39;].f_update(819873000000)" title="Previous Month"><img src="./Summer Internship-2015 Registration Page_files/prev_mon.gif"></td><th>January 1996</th><td onclick="A_TCALS[&#39;0&#39;].f_update(825229800000)" title="Next Month"><img src="./Summer Internship-2015 Registration Page_files/next_mon.gif"></td><td onclick="A_TCALS[&#39;0&#39;].f_update(854173800000)" title="Next Year"><img src="./Summer Internship-2015 Registration Page_files/next_year.gif"></td></tr></tbody></table><table><tbody><tr class="wd"><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr><tr><td onclick="A_TCALS[&#39;0&#39;].f_hide(820391400000)" class="othermonth weekend">31</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(820477800000)">1</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(820564200000)">2</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(820650600000)">3</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(820737000000)">4</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(820823400000)">5</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(820909800000)" class="weekend">6</td></tr><tr><td onclick="A_TCALS[&#39;0&#39;].f_hide(820996200000)" class="weekend">7</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821082600000)">8</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821169000000)">9</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821255400000)">10</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821341800000)">11</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821428200000)">12</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821514600000)" class="weekend">13</td></tr><tr><td onclick="A_TCALS[&#39;0&#39;].f_hide(821601000000)" class="weekend">14</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821687400000)">15</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821773800000)">16</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821860200000)">17</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(821946600000)">18</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822033000000)">19</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822119400000)" class="weekend">20</td></tr><tr><td onclick="A_TCALS[&#39;0&#39;].f_hide(822205800000)" class="weekend">21</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822292200000)">22</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822378600000)">23</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822465000000)">24</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822551400000)">25</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822637800000)">26</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822724200000)" class="weekend">27</td></tr><tr><td onclick="A_TCALS[&#39;0&#39;].f_hide(822810600000)" class="weekend">28</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822897000000)">29</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(822983400000)">30</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(823069800000)">31</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(823156200000)" class="othermonth">1</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(823242600000)" class="othermonth">2</td><td onclick="A_TCALS[&#39;0&#39;].f_hide(823329000000)" class="othermonth weekend">3</td></tr></tbody></table></div><div id="tcalShade" style="width: 166px; left: 468px; top: 671px; visibility: hidden;"><table><tbody><tr><td rowspan="2" width="6"><img src="./Summer Internship-2015 Registration Page_files/pixel.gif"></td><td rowspan="2"><img src="./Summer Internship-2015 Registration Page_files/pixel.gif"></td><td width="7" height="7"><img src="./Summer Internship-2015 Registration Page_files/shade_tr.png"></td></tr><tr><td background="./Summer Internship-2015 Registration Page_files/shade_mr.png" height="121"><img src="./Summer Internship-2015 Registration Page_files/pixel.gif"></td></tr><tr><td><img src="./Summer Internship-2015 Registration Page_files/shade_bl.png"></td><td background="./Summer Internship-2015 Registration Page_files/shade_bm.png" height="7" align="left"><img src="./Summer Internship-2015 Registration Page_files/pixel.gif"></td><td><img src="./Summer Internship-2015 Registration Page_files/shade_br.png"></td></tr></tbody><tbody></tbody></table></div></body><div class="gr-context gr-dict gr-context-loader gr-dict-freemium" style="display: none;"><span class="gr-triangle"></span><div class="gr-placeholder"></div><a href="http://www.grammarly.com/?utm_source=dict&utm_medium=link&utm_campaign=chrome_plg" target="_blank" class="gr-hint-settings"></a><strong class="gr-title"></strong><div class="gr-dict-content"></div></div><div class="b-freemium-editor" style="display: none;"><div class="b-freemium-editor-back"></div><iframe class="gr-freemium-ifr"></iframe></div></html>
