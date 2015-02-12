@@ -56,13 +56,22 @@ h6 {
     font-weight: 700;
 }
 
+
+.clearfloat
+{
+    background-color: red;
+    height: 3%;
+    clear: both;
+}
+
 .circle-image
 {
-    margin :6.6%;
+    margin: 6.6%;
     width: 20%;
     height: 20%;
     border-radius: 50%;
     float: left;
+    clear: right;
 
 }
 
