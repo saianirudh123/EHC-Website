@@ -85,8 +85,8 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in"></div>
-                <div class="intro-heading"></div>
-                <a href="#Home" class="page-scroll btn btn-xl">. .-.. . -.-. - .-. --- -. .. -.-. ... / .... --- -... -... -.-- / -.-. .-.. ..- -...</a>
+                <div class="intro-heading" width="60%"></div>
+                <a href="#Home" class="page-scroll btn btn-xl" id="Morse">. .-.. . -.-. - .-. --- -. .. -.-. ... / .... --- -... -... -.-- / -.-. .-.. ..- -...</a>
             </div>
         </div>
     </header>
@@ -334,12 +334,18 @@ Prof. Incharge: Prof. Sanjeev Gupta</h3>
             </div>
 
              <img src="img/team/Abhimanyu.jpg" class="circle-image"/>
-             <img src="img/team/Abhimanyu.jpg" class="circle-image"/>
-             <img src="img/team/Abhimanyu.jpg" class="circle-image"/>
-             <img src="img/team/Abhimanyu.jpg" class="circle-image"/>
-             <img src="img/team/Abhimanyu.jpg" class="circle-image"/>
-             <img src="img/team/Abhimanyu.jpg" class="circle-image"/>
-             <img src="img/team/Abhimanyu.jpg" class="circle-image"/>
+             <img src="img/team/Anirudh.jpg" class="circle-image"/>
+             <img src="img/team/Ashwin.jpg" class="circle-image"/>
+             <img src="img/team/Bharat.jpg" class="circle-image"/>
+             <img src="img/team/Chaitanya.jpg" class="circle-image"/>
+             <img src="img/team/Dhaval.jpg" class="circle-image"/>
+             <img src="img/team/Shaleen.jpg" class="circle-image"/>
+             <img src="img/team/Lavanya.jpg" class="circle-image"/>
+             <img src="img/team/Mahima.jpg" class="circle-image"/>
+             <img src="img/team/Parth.jpg" class="circle-image"/>
+             <img src="img/team/Shaleen.jpg" class="circle-image"/>
+
+
 
 
            <!-- <div class="row">
@@ -866,7 +872,21 @@ Prof. Incharge: Prof. Sanjeev Gupta</h3>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#Morse").hover(function(){
+        
+        $(this).text("Welcome  to  Electronics "),
+        $(this).append("Hobby  Club,  DA-IICT    ")
+        })
 
+    $("#Morse").mouseleave(function(){
+      $(this).text(". .-.. . -.-. - .-. --- -. .. -.-. ... / .... --- -... -... -.-- / -.-. .-.. ..- -...");
+    });
+
+});
+    </script>
+th
 </body>
 
 </html>
