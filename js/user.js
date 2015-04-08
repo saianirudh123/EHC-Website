@@ -2,8 +2,7 @@ $(document).ready(function(){
 	console.log("Document ready...");
     $("#Morse").hover(function(){
         
-        $(this).text("Welcome  to  Electronics "),
-        $(this).append("Hobby  Club,  DA-IICT    ")
+        $(this).text("WELCOME TO THE ELECTRONICS HOBBY CLUB, DA-IICT")
         })
 
     $("#Morse").mouseleave(function(){

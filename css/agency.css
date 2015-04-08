@@ -194,8 +194,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #319ede;
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,cursive;
+    color: #ffffff;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -206,7 +206,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-collapse {
-    border-color: rgba(255,255,255,.02);
+    border-color: rgba(255,255,255,.02);*
 }
 
 .navbar-default .navbar-toggle {
@@ -227,7 +227,7 @@ fieldset[disabled] .btn-xl.active {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
     color: #fff;
 }
 
@@ -253,7 +253,9 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+        /*background-color: transparent;*/
+        background-color: #000000;
+        opacity: 0.8;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -267,7 +269,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
+        border-radius: 20px;
     }
 
     .navbar-default.navbar-shrink {
@@ -287,7 +289,7 @@ header {
     background-image: url(../img/header-bg.jpg);
     background-position: center center;
     background-repeat: repeat; 
-    padding-top: 38px;
+    padding-top: 150px;
 }
 
 header .intro-text {
@@ -880,4 +882,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #319ede;
+}
+
+@font-face{
+    font-family: TRON;
+    src: url(../fonts/TRON.TTF);
 }
