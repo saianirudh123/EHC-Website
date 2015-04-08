@@ -1,0 +1,21 @@
+extra text
+
+<!--<div class="row">
+                <div class="col-lg-12 text-justify">
+                    <div class="general-block">
+                        <p>We are a breed of hardware freaks. We have our own e-magazine, lectures and discussions. We have our own lab to try out new things by ourselves, and our weapons include devilious Cathode Ray Oscilloscopes, Function Generators to name a few.
+Managed by Prof. Sanjeev Gupta and driven by the student community, this is the ultimate geek paradise. This is where you will find people soldering circuits, wiring motors and working on projects like communicating with motor through the serial port of your computer, or making a new multimedia keyboard, or creating disco lights for the next dance night, or something as elegant as hosting a server on a Raspbery Pi, this is where it all happens.
+This club organizes lectures on different topics of current interest, provides introductory lab sessions on them, organizes debates, quizzes etc. and hold contests like the popular DLD competition, student paper and idea presentations, CRO gaming contests, or our trademark crossword puzzles and even basic robot building contests.</p>
+                    </div>
+                </div>
+            </div>-->
+
+
+=======================================================================================================================
+
+<!--<p class="text-muted"><a href="http://ehc.daiict.ac.in/2011/images/mem_form.pdf">EHC Membership Form</p>
+                    <p class="text-muted"><a href="http://www.engineersgarage.com/">Engineer's Garage</p>
+                    <p class="text-muted"><a href="http://www.howstuffworks.com/">How Stuff Works</p>
+                    <p class="text-muted"><a href="http://www.robokits.co.in/">Robokits India</p>                
+                    <p class="text-muted"><a href="http://electronicsforu.com/newelectronics/default.asp">Electronics For U</p>
+                    <p class="text-muted"><a href="http://ehc.daiict.ac.in/2011/images/brochure.pdf">EHC Brochure</p>-->
